@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Español Juego 🇲🇽</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Español <span class="flag">🇲🇽</span> Juego</h1>
+      <p class="subtitle">A2 → B2 · acento mexicano</p>
+    </header>
+
+    <!-- Screen: mode select -->
+    <section id="screen-menu" class="screen">
+      <div class="mode-grid">
+        <button class="mode-btn" data-mode="vocab">📖 Vocabulario</button>
+        <button class="mode-btn" data-mode="conjugar">✍️ Conjugación</button>
+        <button class="mode-btn" data-mode="escenas">📚 Escenas</button>
+        <button class="mode-btn" data-mode="trad">🔄 Traducción</button>
+        <button class="mode-btn mode-all" data-mode="all">🏆 Juego completo</button>
+      </div>
+      <label class="size-label">
+        Tamaño de ronda:
+        <select id="round-size">
+          <option value="5">Rápida (5)</option>
+          <option value="10" selected>Normal (10)</option>
+          <option value="20">Larga (20)</option>
+        </select>
+      </label>
+    </section>
+
+    <!-- Screen: question -->
+    <section id="screen-play" class="screen hidden">
+      <div class="hud">
+        <span id="hud-lives" class="lives">❤️❤️❤️</span>
+        <span id="hud-progress" class="progress">0/0</span>
+        <span id="hud-score" class="score">0 pts</span>
+      </div>
+      <div class="streak-badge hidden" id="streak-badge">🔥 racha</div>
+      <div class="q-meta" id="q-meta"></div>
+      <div class="q-text" id="q-text"></div>
+      <div class="q-clue" id="q-clue"></div>
+      <div class="answers" id="answers"></div>
+      <div class="open-answer hidden" id="open-answer">
+        <input type="text" id="open-input" autocomplete="off" placeholder="Escribe tu respuesta…">
+        <button id="open-submit">Verificar</button>
+      </div>
+      <div class="feedback hidden" id="feedback"></div>
+      <div class="next-bar hidden" id="next-bar">
+        <button id="btn-next">Siguiente →</button>
+      </div>
+    </section>
+
+    <!-- Screen: results -->
+    <section id="screen-results" class="screen hidden">
+      <div class="results-card">
+        <div class="trophy" id="trophy">🏆</div>
+        <h2 id="results-title">Novato</h2>
+        <p id="results-detail"></p>
+        <div class="results-actions">
+          <button class="mode-btn" id="btn-replay">🔁 Jugar otra vez</button>
+          <button class="mode-btn" id="btn-menu">📋 Menú</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
