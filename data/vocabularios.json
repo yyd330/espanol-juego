@@ -1,0 +1,66 @@
+{
+  "comida": {
+    "theme_en": "Food & restaurants",
+    "theme_es": "Comida y restaurantes",
+    "words": [
+      {"es": "el aguacate", "en": "the avocado", "level": "a2"},
+      {"es": "el mole", "en": "the mole (sauce)", "level": "b1"},
+      {"es": "la tortilla", "en": "the tortilla", "level": "a2"},
+      {"es": "el pozole", "en": "the pozole (soup)", "level": "b1"},
+      {"es": "la salsa", "en": "the salsa / hot sauce", "level": "a2"},
+      {"es": "el comensal", "en": "the diner / customer", "level": "b2"},
+      {"es": "la propina", "en": "the tip", "level": "a2"},
+      {"es": "la sobremesa", "en": "the after-dinner chat", "level": "b2"},
+      {"es": "el mezcal", "en": "the mezcal", "level": "b1"},
+      {"es": "la guajolota", "en": "the turkey (colloq.)", "level": "b1"}
+    ]
+  },
+  "viaje": {
+    "theme_en": "Travel & directions",
+    "theme_es": "Viajes y direcciones",
+    "words": [
+      {"es": "el embarcadero", "en": "the dock / departure pier", "level": "b1"},
+      {"es": "la estación de autobús", "en": "the bus station", "level": "a2"},
+      {"es": "el equipaje", "en": "the luggage", "level": "a2"},
+      {"es": "la aduana", "en": "the customs", "level": "b1"},
+      {"es": "el desvío", "en": "the detour", "level": "b2"},
+      {"es": "la parada", "en": "the stop (bus)", "level": "a2"},
+      {"es": "el billete", "en": "the ticket", "level": "a2"},
+      {"es": "el alojamiento", "en": "the lodging", "level": "b1"},
+      {"es": "la excursión", "en": "the excursion / trip", "level": "b1"},
+      {"es": "el atolladero", "en": "the traffic jam", "level": "b2"}
+    ]
+  },
+  "trabajo": {
+    "theme_en": "Work & business",
+    "theme_es": "Trabajo y negocios",
+    "words": [
+      {"es": "el turno", "en": "the shift", "level": "a2"},
+      {"es": "la nómina", "en": "the payroll", "level": "b1"},
+      {"es": "el sueldo", "en": "the salary", "level": "a2"},
+      {"es": "el emprendedor", "en": "the entrepreneur", "level": "b2"},
+      {"es": "la junta", "en": "the meeting", "level": "a2"},
+      {"es": "el puesto", "en": "the job position", "level": "a2"},
+      {"es": "la jubilación", "en": "the retirement", "level": "b1"},
+      {"es": "el fideicomiso", "en": "the trust (financial)", "level": "b2"},
+      {"es": "la quiebra", "en": "the bankruptcy", "level": "b1"},
+      {"es": "el despidido", "en": "the dismissal", "level": "b1"}
+    ]
+  },
+  "cuerpo": {
+    "theme_en": "Body & health",
+    "theme_es": "Cuerpo y salud",
+    "words": [
+      {"es": "la mandíbula", "en": "the jaw", "level": "a2"},
+      {"es": "la farmacia", "en": "the pharmacy", "level": "a2"},
+      {"es": "la cita médica", "en": "the doctor's appointment", "level": "a2"},
+      {"es": "el esguince", "en": "the sprain", "level": "b1"},
+      {"es": "la alergia", "en": "the allergy", "level": "a2"},
+      {"es": "el pánico", "en": "the panic", "level": "b1"},
+      {"es": "la inflamación", "en": "the inflammation", "level": "b2"},
+      {"es": "la convalecencia", "en": "the recovery period", "level": "b2"},
+      {"es": "el malestar", "en": "the malaise / discomfort", "level": "b1"},
+      {"es": "la crisis", "en": "the (health) episode", "level": "b1"}
+    ]
+  }
+}

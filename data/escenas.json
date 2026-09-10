@@ -1,0 +1,34 @@
+{
+  "escenas": [
+    {
+      "title": "En la taquería",
+      "level": "a2",
+      "texto": "María llegó a la taquería a las dos de la tarde. Pidió un taco de asada y una cerveza fría. El mozo fue muy amable y le trajo una extra sin cobrar. María pagó con tarjeta y dejó una propina generosa.",
+      "questions": [
+        {"q": "¿Qué pidió María?", "options": ["Un taco de carne asada y una cerveza", "Un pozole y agua", "Tres tacos de pollo"], "answer": 0},
+        {"q": "¿Cómo se portó el mozo?", "options": ["Estuvo amable", "Estuvo lento y malhumorado", "No la atendió"], "answer": 0},
+        {"q": "¿Cómo pagó María?", "options": ["Con efectivo", "Con tarjeta", "No pagó"], "answer": 1}
+      ]
+    },
+    {
+      "title": "El viaje al centro",
+      "level": "b1",
+      "texto": "Pedro quería llegar a la estación antes de las nueve. Sin embargo, había un atolladero enorme en la avenida principal. Su hermana le sugirió tomar el desvío por la calle Madero, pero el semáforo estaba roto. Finalmente, llegó a la estación a las nueve y media, justo cuando el tren arrancó.",
+      "questions": [
+        {"q": "¿Por qué no tomó Pedro la calle Madero?", "options": ["Porque estaba prohibida", "Porque el semáforo estaba roto", "Porque no la conocía"], "answer": 1},
+        {"q": "¿A qué hora llegó Pedro a la estación?", "options": ["A las nueve en punto", "A las nueve y media", "A las diez"], "answer": 1},
+        {"q": "¿Qué le sugirió su hermana?", "options": ["Tomar el desvío por Madero", "Esperar un taxi", "Volver a casa"], "answer": 0}
+      ]
+    },
+    {
+      "title": "La junta del viernes",
+      "level": "b2",
+      "texto": "El director anunció que la quiebra de un proveedor había retrasado la nómina de octubre. Los empleados estaban inquietos, pero el fideicomiso de la empresa cubriría el atraso. La emprendedora que dirigía el proyecto pidió una junta extra para reestructurar el presupuesto antes de la próxima junta de accionistas.",
+      "questions": [
+        {"q": "¿Qué causó el retraso de la nómina?", "options": ["La quiebra de un proveedor", "Una huelga", "Un error de contabilidad"], "answer": 0},
+        {"q": "¿Quién pidió la junta extra?", "options": ["El director", "El fideicomiso", "La emprendedora del proyecto"], "answer": 2},
+        {"q": "¿Qué cubriría el atraso?", "options": ["El fideicomiso de la empresa", "Los propios empleados", "Nadie"], "answer": 0}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tense": "pretérito",
+  "note": "Mexican Spanish focus: salir → salí (no 'he salido'); ser/ir/tener high-frequency.",
+  "verbs": [
+    {"inf": "comer", "person": "yo", "answer": "comí", "sentence": "Ayer yo ___ mucho en Oaxaca.", "clue": "comer (to eat) — preterite"},
+    {"inf": "salir", "person": "él", "answer": "salió", "sentence": "Él ___ del estadio a las diez.", "clue": "salir (to leave) — preterite"},
+    {"inf": "poner", "person": "nosotros", "answer": "pusimos", "sentence": "Nosotros ___ la mesa para la cena.", "clue": "poner (to put) — preterite"},
+    {"inf": "ir", "person": "tú", "answer": "fuiste", "sentence": "¿Dónde ___ tú el sábado?", "clue": "ir (to go) — preterite"},
+    {"inf": "venir", "person": "ellos", "answer": "vinieron", "sentence": "Ellos ___ de Monterrey en tren.", "clue": "venir (to come) — preterite"},
+    {"inf": "hacer", "person": "yo", "answer": "hice", "sentence": "Yo ___ el examen de matemáticas.", "clue": "hacer (to do/make) — preterite"},
+    {"inf": "estar", "person": "tú", "answer": "estuviste", "sentence": "¿Tú ___ en Guadalajara en 2020?", "clue": "estar (to be) — preterite"},
+    {"inf": "dormir", "person": "ella", "answer": "durmió", "sentence": "Ella ___ ocho horas ayer.", "clue": "dormir (to sleep) — preterite"},
+    {"inf": "escribir", "person": "él", "answer": "escribió", "sentence": "Él ___ un correo largo.", "clue": "escribir (to write) — preterite"},
+    {"inf": "ver", "person": "nosotros", "answer": "vimos", "sentence": "Nosotros ___ el partido de fútbol.", "clue": "ver (to see/watch) — preterite"}
+  ],
+  "imperfect": {
+    "tense": "imperfecto",
+    "verbs": [
+      {"inf": "ser", "person": "yo", "answer": "era", "sentence": "Cuando niño, yo ___ muy tímido.", "clue": "ser (to be) — imperfect"},
+      {"inf": "tener", "person": "nosotros", "answer": "teníamos", "sentence": "Nosotros ___ un perro llamado Chispa.", "clue": "tener (to have) — imperfect"},
+      {"inf": "ir", "person": "ellos", "answer": "iban", "sentence": "Ellos ___ al mercado todos los días.", "clue": "ir (to go) — imperfect"},
+      {"inf": "decir", "person": "tú", "answer": "decías", "sentence": "Tú ___ muchas mentiras antes.", "clue": "decir (to say) — imperfect"},
+      {"inf": "hacer", "person": "él", "answer": "hacía", "sentence": "Él ___ la cena mientras yo leía.", "clue": "hacer (to do) — imperfect"},
+      {"inf": "poner", "person": "ella", "answer": "ponía", "sentence": "Ella ___ la radio todas las mañanas.", "clue": "poner (to put) — imperfect"}
+    ]
+  },
+  "mixto": {
+    "tense": "pretérito vs imperfecto",
+    "verbs": [
+      {"person": "yo", "answer": "estaba", "sentence": "Yo ___ cansado cuando sonó el teléfono.", "clue": "estado en progreso (in progress) → imperfect"},
+      {"person": "yo", "answer": "llegué", "sentence": "___ a casa a las 8 y cené con mi familia.", "clue": "acción completa (completed action) → preterite"},
+      {"person": "ella", "answer": "comía", "sentence": "Ella ___ cuando el teléfono sonó.", "clue": "incomplete action interrupted → imperfect"},
+      {"person": "tú", "answer": "encontraste", "sentence": "¿___ tu llave en el bolso?", "clue": "completed, one-time action → preterite"},
+      {"person": "nosotros", "answer": "vivíamos", "sentence": "Nosotros ___ en Monterrey diez años.", "clue": "ongoing past state → imperfect"}
+    ]
+  }
+}

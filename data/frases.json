@@ -1,0 +1,14 @@
+{
+  "frases": [
+    {"es": "¿Me pasa la cuenta, por favor?", "en": "Can you bring me the bill, please?"},
+    {"es": "Estoy perdido, ¿dónde está la parada del autobús?", "en": "I'm lost, where is the bus stop?"},
+    {"es": "Me duele mucho la mandíbula desde ayer.", "en": "My jaw has hurt a lot since yesterday."},
+    {"es": "¿Puedo pagar con tarjeta o solo en efectivo?", "en": "Can I pay by card or only in cash?"},
+    {"es": "Voy a la farmacia a comprar medicamento.", "en": "I'm going to the pharmacy to buy medicine."},
+    {"es": "Tuve que salir antes de la reunión.", "en": "I had to leave before the meeting."},
+    {"es": "¿Cuánto cuesta el billete de regreso?", "en": "How much is the return ticket?"},
+    {"es": "Llevaba tres horas esperando cuando llegó.", "en": "I had been waiting for three hours when he arrived."},
+    {"es": "El médico me mandó a descansar por una semana.", "en": "The doctor told me to rest for a week."},
+    {"es": "¿Me puedes decir por dónde está la aduana?", "en": "Can you tell me where customs is?"}
+  ]
+}
