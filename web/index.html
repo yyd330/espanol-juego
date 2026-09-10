@@ -10,11 +10,21 @@
   <div id="app">
     <header>
       <h1>Español <span class="flag">🇲🇽</span> Juego</h1>
-      <p class="subtitle">A2 → B2 · acento mexicano</p>
+      <p class="subtitle">Nivel 0 → C1 · acento mexicano · aprende + juega</p>
     </header>
 
     <!-- Screen: mode select -->
     <section id="screen-menu" class="screen">
+      <div class="menu-section learn-highlight">
+        <button class="mode-btn mode-learn" data-mode="aprender">🎓 Aprender (tarjetas + quiz)</button>
+        <div class="menu-options">
+          <label class="size-label">Tema:
+            <select id="learn-theme">
+              <option value="all">Todos los temas</option>
+            </select>
+          </label>
+        </div>
+      </div>
       <div class="mode-grid">
         <button class="mode-btn" data-mode="vocab">📖 Vocabulario</button>
         <button class="mode-btn" data-mode="conjugar">✍️ Conjugación</button>
@@ -22,14 +32,80 @@
         <button class="mode-btn" data-mode="trad">🔄 Traducción</button>
         <button class="mode-btn mode-all" data-mode="all">🏆 Juego completo</button>
       </div>
-      <label class="size-label">
-        Tamaño de ronda:
-        <select id="round-size">
-          <option value="5">Rápida (5)</option>
-          <option value="10" selected>Normal (10)</option>
-          <option value="20">Larga (20)</option>
-        </select>
-      </label>
+      <div class="menu-options">
+        <label class="size-label">Niveles: de
+          <select id="level-from"></select>
+          a
+          <select id="level-to"></select>
+        </label>
+        <label class="size-label">Tens (conjugación):
+          <select id="conj-group">
+            <option value="all">Todos</option>
+            <option value="presente" selected>Presente</option>
+            <option value="preterito">Pretérito</option>
+            <option value="imperfecto">Imperfecto</option>
+            <option value="mixto">Pretérito vs Imperfecto</option>
+            <option value="condicional">Condicional / Futuro</option>
+            <option value="subjuntivo">Subjuntivo</option>
+          </select>
+        </label>
+        <label class="size-label">Tamaño de ronda:
+          <select id="round-size">
+            <option value="5">Rápida (5)</option>
+            <option value="10" selected>Normal (10)</option>
+            <option value="20">Larga (20)</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <!-- Screen: mini-lesson -->
+    <section id="screen-lesson" class="screen hidden">
+      <div class="lesson-card">
+        <div class="lesson-emoji">📝</div>
+        <h2 id="lesson-title"></h2>
+        <p id="lesson-text" class="lesson-text"></p>
+        <div class="lesson-actions">
+          <button class="mode-btn" id="btn-lesson-start">¡Entendido! Empezar quiz →</button>
+          <button class="mode-btn menu-link" id="btn-lesson-back">📋 Menú</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen: learn (flashcards) -->
+    <section id="screen-learn" class="screen hidden">
+      <div id="learn-cards">
+        <div class="hud">
+          <span id="learn-progress" class="progress"></span>
+          <button class="menu-link" id="btn-learn-exit">Salir ✕</button>
+        </div>
+        <div class="flashcard" id="flashcard">
+          <div class="fc-level" id="fc-level"></div>
+          <div class="fc-word" id="fc-word"></div>
+          <div class="fc-reveal hidden" id="fc-reveal">
+            <div class="fc-en" id="fc-en"></div>
+            <div class="fc-ej" id="fc-ej"></div>
+            <div class="fc-ej-en" id="fc-ej-en"></div>
+          </div>
+          <div class="fc-hint" id="fc-hint">Toca para ver la respuesta</div>
+          <button class="mode-btn" id="btn-flip">Mostrar respuesta</button>
+          <div class="fc-know hidden" id="fc-know">
+            <button class="mode-btn know-yes" id="btn-know">✅ La sabía</button>
+            <button class="mode-btn know-no" id="btn-review">🔁 Repasar</button>
+          </div>
+        </div>
+      </div>
+      <div id="learn-done" class="hidden">
+        <div class="results-card">
+          <div class="trophy">🎓</div>
+          <h2>¡Repaso completado!</h2>
+          <p id="learn-done-text"></p>
+          <div class="results-actions">
+            <button class="mode-btn" id="btn-learn-quiz">🎯 Quiz de estas palabras</button>
+            <button class="mode-btn" id="btn-learn-menu">📋 Menú</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Screen: question -->
@@ -39,10 +115,11 @@
         <span id="hud-progress" class="progress">0/0</span>
         <span id="hud-score" class="score">0 pts</span>
       </div>
+      <div class="q-context hidden" id="q-context"></div>
       <div class="streak-badge hidden" id="streak-badge">🔥 racha</div>
       <div class="q-meta" id="q-meta"></div>
       <div class="q-text" id="q-text"></div>
-      <div class="q-clue" id="q-clue"></div>
+      <div class="q-clue hidden" id="q-clue"></div>
       <div class="answers" id="answers"></div>
       <div class="open-answer hidden" id="open-answer">
         <input type="text" id="open-input" autocomplete="off" placeholder="Escribe tu respuesta…">

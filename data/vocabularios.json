@@ -1,66 +1,270 @@
 {
-  "comida": {
-    "theme_en": "Food & restaurants",
-    "theme_es": "Comida y restaurantes",
+  "saludos": {
+    "theme_en": "Greetings & introductions",
+    "theme_es": "Saludos y presentaciones",
     "words": [
-      {"es": "el aguacate", "en": "the avocado", "level": "a2"},
-      {"es": "el mole", "en": "the mole (sauce)", "level": "b1"},
-      {"es": "la tortilla", "en": "the tortilla", "level": "a2"},
-      {"es": "el pozole", "en": "the pozole (soup)", "level": "b1"},
-      {"es": "la salsa", "en": "the salsa / hot sauce", "level": "a2"},
-      {"es": "el comensal", "en": "the diner / customer", "level": "b2"},
-      {"es": "la propina", "en": "the tip", "level": "a2"},
-      {"es": "la sobremesa", "en": "the after-dinner chat", "level": "b2"},
-      {"es": "el mezcal", "en": "the mezcal", "level": "b1"},
-      {"es": "la guajolota", "en": "the turkey (colloq.)", "level": "b1"}
+      {"es": "hola", "en": "hello", "level": "0", "ej": "¡Hola! ¿Cómo estás?", "ej_en": "Hi! How are you?"},
+      {"es": "buenos días", "en": "good morning", "level": "0", "ej": "Buenos días, señorita.", "ej_en": "Good morning, miss."},
+      {"es": "buenas tardes", "en": "good afternoon", "level": "0", "ej": "Buenas tardes, ¿en qué puedo ayudarle?", "ej_en": "Good afternoon, how can I help you?"},
+      {"es": "buenas noches", "en": "good evening / good night", "level": "0", "ej": "Buenas noches, ya me voy a dormir.", "ej_en": "Good night, I'm going to sleep now."},
+      {"es": "¿Cómo te llamas?", "en": "What's your name?", "level": "0", "ej": "¿Cómo te llamas? — Me llamo Carlos.", "ej_en": "What's your name? — My name is Carlos."},
+      {"es": "mucho gusto", "en": "nice to meet you", "level": "0", "ej": "Mucho gusto, yo soy Ana.", "ej_en": "Nice to meet you, I'm Ana."},
+      {"es": "por favor", "en": "please", "level": "0", "ej": "Un café, por favor.", "ej_en": "A coffee, please."},
+      {"es": "gracias", "en": "thank you", "level": "0", "ej": "Muchas gracias por tu ayuda.", "ej_en": "Thank you very much for your help."},
+      {"es": "de nada", "en": "you're welcome", "level": "0", "ej": "— ¡Gracias! — De nada.", "ej_en": "— Thanks! — You're welcome."},
+      {"es": "adiós", "en": "goodbye", "level": "0", "ej": "Adiós, hasta mañana.", "ej_en": "Bye, see you tomorrow."},
+      {"es": "¿Cómo estás?", "en": "How are you? (informal)", "level": "0", "ej": "¿Cómo estás? Bien, gracias.", "ej_en": "How are you? Fine, thanks."},
+      {"es": "¿Cómo se llama usted?", "en": "What is your name? (formal)", "level": "a1", "ej": "¿Cómo se llama usted? — Me llamo doña Rosa.", "ej_en": "What is your name? — My name is Doña Rosa."},
+      {"es": "¿De dónde es usted?", "en": "Where are you from? (formal)", "level": "a1", "ej": "¿De dónde es usted? — Soy de México.", "ej_en": "Where are you from? — I'm from Mexico."},
+      {"es": "hasta luego", "en": "see you later", "level": "a1", "ej": "Nos vemos en la clase. ¡Hasta luego!", "ej_en": "See you in class. Bye for now!"},
+      {"es": "hasta mañana", "en": "see you tomorrow", "level": "a1", "ej": "Nos vemos en el trabajo. ¡Hasta mañana!", "ej_en": "See you at work. See you tomorrow!"}
+    ]
+  },
+  "numeros": {
+    "theme_en": "Numbers & counting",
+    "theme_es": "Números",
+    "words": [
+      {"es": "cero", "en": "zero", "level": "0", "ej": "Hay cero personas aquí.", "ej_en": "There are zero people here."},
+      {"es": "uno / una", "en": "one", "level": "0", "ej": "Tengo una manzana.", "ej_en": "I have one apple."},
+      {"es": "dos", "en": "two", "level": "0", "ej": "Quiero dos cafés, por favor.", "ej_en": "I want two coffees, please."},
+      {"es": "tres", "en": "three", "level": "0", "ej": "Tengo tres hermanos.", "ej_en": "I have three siblings."},
+      {"es": "diez", "en": "ten", "level": "0", "ej": "Son las diez de la mañana.", "ej_en": "It's ten o'clock in the morning."},
+      {"es": "veinte", "en": "twenty", "level": "a1", "ej": "Tengo veinte años.", "ej_en": "I'm twenty years old."},
+      {"es": "cien", "en": "one hundred", "level": "a1", "ej": "El taxi cuesta cien pesos.", "ej_en": "The taxi costs a hundred pesos."},
+      {"es": "mil", "en": "one thousand", "level": "a1", "ej": "El departamento cuesta mil dólares al mes.", "ej_en": "The apartment costs a thousand dollars a month."}
+    ]
+  },
+  "familia": {
+    "theme_en": "Family",
+    "theme_es": "La familia",
+    "words": [
+      {"es": "la mamá / la madre", "en": "the mother / mom", "level": "0", "ej": "Mi mamá cocina muy bien.", "ej_en": "My mom cooks very well."},
+      {"es": "el papá / el padre", "en": "the father / dad", "level": "0", "ej": "Mi papá trabaja en una fábrica.", "ej_en": "My dad works in a factory."},
+      {"es": "el hermano", "en": "the brother", "level": "0", "ej": "Mi hermano juega fútbol.", "ej_en": "My brother plays soccer."},
+      {"es": "la hermana", "en": "the sister", "level": "0", "ej": "Mi hermana estudia en la universidad.", "ej_en": "My sister studies at university."},
+      {"es": "el hijo", "en": "the son", "level": "a1", "ej": "El hijo de mi vecina tiene cinco años.", "ej_en": "My neighbor's son is five years old."},
+      {"es": "la hija", "en": "the daughter", "level": "a1", "ej": "Su hija es médica.", "ej_en": "Her daughter is a doctor."},
+      {"es": "el abuelo", "en": "the grandfather", "level": "a1", "ej": "Vivo con mis abuelos.", "ej_en": "I live with my grandparents."},
+      {"es": "la abuela", "en": "the grandmother", "level": "a1", "ej": "Mi abuela hace las mejores galletas.", "ej_en": "My grandma makes the best cookies."},
+      {"es": "los primos", "en": "the cousins", "level": "a1", "ej": "En Navidad veo a todos mis primos.", "ej_en": "At Christmas I see all my cousins."},
+      {"es": "la familia", "en": "the family", "level": "0", "ej": "Mi familia vive en la Ciudad de México.", "ej_en": "My family lives in Mexico City."}
+    ]
+  },
+  "colores": {
+    "theme_en": "Colors",
+    "theme_es": "Los colores",
+    "words": [
+      {"es": "rojo", "en": "red", "level": "0", "ej": "El tomate es rojo.", "ej_en": "The tomato is red."},
+      {"es": "azul", "en": "blue", "level": "0", "ej": "El cielo está azul.", "ej_en": "The sky is blue."},
+      {"es": "verde", "en": "green", "level": "0", "ej": "La manzana verde está crujiente.", "ej_en": "The green apple is crunchy."},
+      {"es": "amarillo", "en": "yellow", "level": "0", "ej": "El sol es amarillo.", "ej_en": "The sun is yellow."},
+      {"es": "negro", "en": "black", "level": "a1", "ej": "Me gusta el café negro.", "ej_en": "I like black coffee."},
+      {"es": "blanco", "en": "white", "level": "a1", "ej": "La casa está blanca.", "ej_en": "The house is white."},
+      {"es": "naranja", "en": "orange", "level": "a1", "ej": "La naranja es muy dulce.", "ej_en": "The orange is very sweet."},
+      {"es": "morado", "en": "purple", "level": "a2", "ej": "Ella lleva un vestido morado.", "ej_en": "She's wearing a purple dress."}
+    ]
+  },
+  "cuerpo": {
+    "theme_en": "Body & health basics",
+    "theme_es": "El cuerpo",
+    "words": [
+      {"es": "la cabeza", "en": "the head", "level": "a1", "ej": "Me duele la cabeza.", "ej_en": "I have a headache."},
+      {"es": "el ojo", "en": "the eye", "level": "a1", "ej": "Tengo un ojo azul y otro verde.", "ej_en": "I have one blue eye and one green eye."},
+      {"es": "la mano", "en": "the hand", "level": "a1", "ej": "Lavo las manos antes de comer.", "ej_en": "I wash my hands before eating."},
+      {"es": "el pie", "en": "the foot", "level": "a1", "ej": "Me corté el pie con un vidrio.", "ej_en": "I cut my foot on a piece of glass."},
+      {"es": "el estómago", "en": "the stomach", "level": "a1", "ej": "Me duele el estómago.", "ej_en": "My stomach hurts."},
+      {"es": "la garganta", "en": "the throat", "level": "a2", "ej": "Tengo dolor de garganta.", "ej_en": "I have a sore throat."},
+      {"es": "la fiebre", "en": "the fever", "level": "a2", "ej": "El niño tiene fiebre, llama al doctor.", "ej_en": "The child has a fever, call the doctor."},
+      {"es": "la farmacia", "en": "the pharmacy", "level": "a2", "ej": "Voy a la farmacia a comprar medicina.", "ej_en": "I'm going to the pharmacy to buy medicine."},
+      {"es": "el médico", "en": "the doctor", "level": "a1", "ej": "El médico me recetó antibióticos.", "ej_en": "The doctor prescribed me antibiotics."},
+      {"es": "la cita médica", "en": "the medical appointment", "level": "b1", "ej": "Tengo una cita médica el viernes.", "ej_en": "I have a doctor's appointment on Friday."}
+    ]
+  },
+  "comida": {
+    "theme_en": "Food & drink",
+    "theme_es": "Comida y bebidas",
+    "words": [
+      {"es": "el agua", "en": "the water", "level": "0", "ej": "Quiero un vaso de agua, por favor.", "ej_en": "I want a glass of water, please."},
+      {"es": "el pan", "en": "the bread", "level": "0", "ej": "Compro pan todos los días.", "ej_en": "I buy bread every day."},
+      {"es": "la leche", "en": "the milk", "level": "0", "ej": "Tomo la leche con café.", "ej_en": "I drink milk with coffee."},
+      {"es": "el arroz", "en": "the rice", "level": "0", "ej": "En México siempre hay arroz.", "ej_en": "In Mexico there's always rice."},
+      {"es": "el aguacate", "en": "the avocado", "level": "a1", "ej": "Pongo aguacate en mis tacos.", "ej_en": "I put avocado on my tacos."},
+      {"es": "la tortilla", "en": "the tortilla", "level": "a1", "ej": "¿Quieres tortillas de maíz o de trigo?", "ej_en": "Do you want corn or flour tortillas?"},
+      {"es": "el mole", "en": "the mole (sauce)", "level": "b1", "ej": "El mole oaxaqueño lleva chiles y chocolate.", "ej_en": "Oaxacan mole contains chilies and chocolate."},
+      {"es": "el pozole", "en": "the pozole (soup)", "level": "b1", "ej": "El pozole se come en las fiestas.", "ej_en": "Pozole is eaten at celebrations."},
+      {"es": "la salsa", "en": "the salsa / hot sauce", "level": "a1", "ej": "La salsa está muy picante.", "ej_en": "The salsa is very spicy."},
+      {"es": "el pozol", "en": "the atole (corn drink)", "level": "b2", "ej": "Por la mañana tomo atole con pan dulce.", "ej_en": "In the morning I drink atole with sweet bread."},
+      {"es": "la sobremesa", "en": "the after-dinner chat", "level": "b2", "ej": "En México la sobremesa dura horas.", "ej_en": "In Mexico the after-dinner chat lasts hours."},
+      {"es": "el comensal", "en": "the diner / customer", "level": "b2", "ej": "El comensal pidió la cuenta.", "ej_en": "The diner asked for the bill."}
+    ]
+  },
+  "restaurante": {
+    "theme_en": "At the restaurant",
+    "theme_es": "En el restaurante",
+    "words": [
+      {"es": "la mesa", "en": "the table", "level": "a1", "ej": "¿Tiene una mesa para dos?", "ej_en": "Do you have a table for two?"},
+      {"es": "el menú", "en": "the menu", "level": "a1", "ej": "¿Me da el menú, por favor?", "ej_en": "Can I have the menu, please?"},
+      {"es": "la cuenta", "en": "the bill / check", "level": "a1", "ej": "¿Me pasa la cuenta, por favor?", "ej_en": "Can I get the bill, please?"},
+      {"es": "la propina", "en": "the tip", "level": "a2", "ej": "Dejamos la propina en la mesa.", "ej_en": "We leave the tip on the table."},
+      {"es": "el mesero", "en": "the waiter", "level": "a1", "ej": "El mesero trajo el agua.", "ej_en": "The waiter brought the water."},
+      {"es": "la orden", "en": "the order", "level": "a2", "ej": "¿Ya puedo tomar su orden?", "ej_en": "May I take your order now?"},
+      {"es": "picante", "en": "spicy", "level": "a2", "ej": "¿Sin picante, por favor.", "ej_en": "No spicy, please."},
+      {"es": "el postre", "en": "the dessert", "level": "a2", "ej": "Para el postre, unos churros.", "ej_en": "For dessert, some churros."}
+    ]
+  },
+  "ciudad": {
+    "theme_en": "The city & places",
+    "theme_es": "La ciudad y lugares",
+    "words": [
+      {"es": "la casa", "en": "the house", "level": "0", "ej": "La casa es grande.", "ej_en": "The house is big."},
+      {"es": "la calle", "en": "the street", "level": "a1", "ej": "Vivo en esta calle.", "ej_en": "I live on this street."},
+      {"es": "el mercado", "en": "the market", "level": "a1", "ej": "Voy al mercado a comprar fruta.", "ej_en": "I'm going to the market to buy fruit."},
+      {"es": "el banco", "en": "the bank", "level": "a1", "ej": "Voy al banco a sacar dinero.", "ej_en": "I'm going to the bank to withdraw money."},
+      {"es": "la plaza", "en": "the square / plaza", "level": "a2", "ej": "Nos vemos en la plaza central.", "ej_en": "See you in the main square."},
+      {"es": "el edificio", "en": "the building", "level": "a2", "ej": "Mi oficina está en un edificio nuevo.", "ej_en": "My office is in a new building."},
+      {"es": "la gasolinera", "en": "the gas station", "level": "a2", "ej": "Hago paradas en la gasolinera.", "ej_en": "I stop at the gas station."}
+    ]
+  },
+  "transporte": {
+    "theme_en": "Transport & directions",
+    "theme_es": "Transporte y direcciones",
+    "words": [
+      {"es": "el taxi", "en": "the taxi", "level": "a1", "ej": "Tomo un taxi al aeropuerto.", "ej_en": "I take a taxi to the airport."},
+      {"es": "el autobús", "en": "the bus", "level": "a1", "ej": "El autobús tarda veinte minutos.", "ej_en": "The bus takes twenty minutes."},
+      {"es": "el tren", "en": "the train", "level": "a1", "ej": "Tomo el tren a CDMX.", "ej_en": "I take the train to Mexico City."},
+      {"es": "el billete", "en": "the ticket", "level": "a2", "ej": "¿Cuánto cuesta el billete?", "ej_en": "How much is the ticket?"},
+      {"es": "la parada", "en": "the stop", "level": "a2", "ej": "Bájese en la siguiente parada.", "ej_en": "Get off at the next stop."},
+      {"es": "el embotellamiento", "en": "the traffic jam", "level": "b1", "ej": "Hay mucho embotellamiento a las cinco.", "ej_en": "There's a lot of traffic at five o'clock."},
+      {"es": "el desvío", "en": "the detour", "level": "b2", "ej": "Tomamos un desvío por la obra.", "ej_en": "We took a detour because of the construction."}
     ]
   },
   "viaje": {
-    "theme_en": "Travel & directions",
-    "theme_es": "Viajes y direcciones",
+    "theme_en": "Travel",
+    "theme_es": "Viajes",
     "words": [
-      {"es": "el embarcadero", "en": "the dock / departure pier", "level": "b1"},
-      {"es": "la estación de autobús", "en": "the bus station", "level": "a2"},
-      {"es": "el equipaje", "en": "the luggage", "level": "a2"},
-      {"es": "la aduana", "en": "the customs", "level": "b1"},
-      {"es": "el desvío", "en": "the detour", "level": "b2"},
-      {"es": "la parada", "en": "the stop (bus)", "level": "a2"},
-      {"es": "el billete", "en": "the ticket", "level": "a2"},
-      {"es": "el alojamiento", "en": "the lodging", "level": "b1"},
-      {"es": "la excursión", "en": "the excursion / trip", "level": "b1"},
-      {"es": "el atolladero", "en": "the traffic jam", "level": "b2"}
+      {"es": "el equipaje", "en": "the luggage", "level": "a2", "ej": "Mi equipaje está en la maleta.", "ej_en": "My luggage is in the suitcase."},
+      {"es": "el pasaporte", "en": "the passport", "level": "a2", "ej": "Necesito mi pasaporte para volar.", "ej_en": "I need my passport to fly."},
+      {"es": "la aduana", "en": "the customs", "level": "b1", "ej": "En la aduana me revisaron la maleta.", "ej_en": "At customs they checked my suitcase."},
+      {"es": "el embarcadero", "en": "the dock / pier", "level": "b1", "ej": "El barco parte del embarcadero.", "ej_en": "The boat leaves from the dock."},
+      {"es": "la excursión", "en": "the excursion", "level": "b1", "ej": "Hicimos una excursión al volcán.", "ej_en": "We took an excursion to the volcano."},
+      {"es": "el alojamiento", "en": "the lodging", "level": "b1", "ej": "El alojamiento incluye desayuno.", "ej_en": "The lodging includes breakfast."}
+    ]
+  },
+  "tiempo": {
+    "theme_en": "Weather & time",
+    "theme_es": "Clima y tiempo",
+    "words": [
+      {"es": "el sol", "en": "the sun", "level": "0", "ej": "Hoy hace mucho sol.", "ej_en": "It's very sunny today."},
+      {"es": "la lluvia", "en": "the rain", "level": "a1", "ej": "Llueve mucho en el verano.", "ej_en": "It rains a lot in summer."},
+      {"es": "el frío", "en": "the cold", "level": "a1", "ej": "En el norte hace frío en invierno.", "ej_en": "In the north it's cold in winter."},
+      {"es": "el calor", "en": "the heat", "level": "a1", "ej": "Hace mucho calor hoy.", "ej_en": "It's very hot today."},
+      {"es": "la tormenta", "en": "the storm", "level": "a2", "ej": "La tormenta cortó la luz.", "ej_en": "The storm cut the power."},
+      {"es": "el invierno", "en": "winter", "level": "a1", "ej": "En invierno uso abrigo.", "ej_en": "In winter I wear a coat."},
+      {"es": "el verano", "en": "summer", "level": "a1", "ej": "En verano vamos a la playa.", "ej_en": "In summer we go to the beach."}
+    ]
+  },
+  "ropa": {
+    "theme_en": "Clothes",
+    "theme_es": "Ropa",
+    "words": [
+      {"es": "la camisa", "en": "the shirt", "level": "a1", "ej": "La camisa está limpia.", "ej_en": "The shirt is clean."},
+      {"es": "el pantalón", "en": "the pants", "level": "a1", "ej": "El pantalón me queda pequeño.", "ej_en": "The pants fit me small."},
+      {"es": "el suéter", "en": "the sweater", "level": "a2", "ej": "Me pongo el suéter, hace frío.", "ej_en": "I put on the sweater, it's cold."},
+      {"es": "el zapato", "en": "the shoe", "level": "a1", "ej": "Mis zapatos están nuevos.", "ej_en": "My shoes are new."},
+      {"es": "el abrigo", "en": "the coat", "level": "a2", "ej": "En enero traigo el abrigo.", "ej_en": "In January I bring the coat."},
+      {"es": "la falda", "en": "the skirt", "level": "a2", "ej": "La falda es de lino.", "ej_en": "The skirt is linen."}
     ]
   },
   "trabajo": {
     "theme_en": "Work & business",
     "theme_es": "Trabajo y negocios",
     "words": [
-      {"es": "el turno", "en": "the shift", "level": "a2"},
-      {"es": "la nómina", "en": "the payroll", "level": "b1"},
-      {"es": "el sueldo", "en": "the salary", "level": "a2"},
-      {"es": "el emprendedor", "en": "the entrepreneur", "level": "b2"},
-      {"es": "la junta", "en": "the meeting", "level": "a2"},
-      {"es": "el puesto", "en": "the job position", "level": "a2"},
-      {"es": "la jubilación", "en": "the retirement", "level": "b1"},
-      {"es": "el fideicomiso", "en": "the trust (financial)", "level": "b2"},
-      {"es": "la quiebra", "en": "the bankruptcy", "level": "b1"},
-      {"es": "el despidido", "en": "the dismissal", "level": "b1"}
+      {"es": "el empleo", "en": "the job", "level": "a2", "ej": "Busco un empleo mejor.", "ej_en": "I'm looking for a better job."},
+      {"es": "el sueldo", "en": "the salary", "level": "a2", "ej": "El sueldo es mensual.", "ej_en": "The salary is monthly."},
+      {"es": "la nómina", "en": "the payroll", "level": "b1", "ej": "La nómina se deposita el quince.", "ej_en": "The payroll is deposited on the fifteenth."},
+      {"es": "el turno", "en": "the shift", "level": "a2", "ej": "Trabajo turno de noche.", "ej_en": "I work the night shift."},
+      {"es": "la reunión", "en": "the meeting", "level": "a2", "ej": "Tengo una reunión a las nueve.", "ej_en": "I have a meeting at nine."},
+      {"es": "el jefe", "en": "the boss", "level": "a2", "ej": "El jefe aprueba el proyecto.", "ej_en": "The boss approves the project."},
+      {"es": "la licencia", "en": "the (paid) leave", "level": "b1", "ej": "Tomé tres días de licencia.", "ej_en": "I took three days off."},
+      {"es": "la empresa", "en": "the company", "level": "b1", "ej": "La empresa creció este año.", "ej_en": "The company grew this year."},
+      {"es": "el contrato", "en": "the contract", "level": "b1", "ej": "Firmamos el contrato por dos años.", "ej_en": "We signed a two-year contract."}
     ]
   },
-  "cuerpo": {
-    "theme_en": "Body & health",
-    "theme_es": "Cuerpo y salud",
+  "escuela": {
+    "theme_en": "School & education",
+    "theme_es": "Escuela y educación",
     "words": [
-      {"es": "la mandíbula", "en": "the jaw", "level": "a2"},
-      {"es": "la farmacia", "en": "the pharmacy", "level": "a2"},
-      {"es": "la cita médica", "en": "the doctor's appointment", "level": "a2"},
-      {"es": "el esguince", "en": "the sprain", "level": "b1"},
-      {"es": "la alergia", "en": "the allergy", "level": "a2"},
-      {"es": "el pánico", "en": "the panic", "level": "b1"},
-      {"es": "la inflamación", "en": "the inflammation", "level": "b2"},
-      {"es": "la convalecencia", "en": "the recovery period", "level": "b2"},
-      {"es": "el malestar", "en": "the malaise / discomfort", "level": "b1"},
-      {"es": "la crisis", "en": "the (health) episode", "level": "b1"}
+      {"es": "la clase", "en": "the class", "level": "a1", "ej": "La clase de español es a las tres.", "ej_en": "The Spanish class is at three."},
+      {"es": "el profesor", "en": "the teacher (m.)", "level": "a1", "ej": "El profesor explica la lección.", "ej_en": "The teacher explains the lesson."},
+      {"es": "el examen", "en": "the exam", "level": "a2", "ej": "El examen es el lunes.", "ej_en": "The exam is on Monday."},
+      {"es": "la tarea", "en": "the homework", "level": "a1", "ej": "Hice la tarea de matemáticas.", "ej_en": "I did the math homework."},
+      {"es": "la universidad", "en": "the university", "level": "a2", "ej": "Ella estudia en la universidad.", "ej_en": "She studies at university."},
+      {"es": "el estudiante", "en": "the student", "level": "a1", "ej": "El estudiante toma notas.", "ej_en": "The student takes notes."}
+    ]
+  },
+  "deportes": {
+    "theme_en": "Sports & exercise",
+    "theme_es": "Deportes y ejercicio",
+    "words": [
+      {"es": "el fútbol", "en": "soccer", "level": "a1", "ej": "Juego fútbol los domingos.", "ej_en": "I play soccer on Sundays."},
+      {"es": "el baloncesto", "en": "basketball", "level": "a2", "ej": "El equipo de baloncesto ganó.", "ej_en": "The basketball team won."},
+      {"es": "la raqueta", "en": "the racket", "level": "b1", "ej": "Necesito una raqueta de bádminton.", "ej_en": "I need a badminton racket."},
+      {"es": "el gimnasio", "en": "the gym", "level": "a2", "ej": "Voy al gimnasio tres veces por semana.", "ej_en": "I go to the gym three times a week."},
+      {"es": "la carrera", "en": "the race / running", "level": "a2", "ej": "Corrí una carrera de diez kilómetros.", "ej_en": "I ran a ten-kilometer race."},
+      {"es": "el partido", "en": "the match", "level": "a2", "ej": "El partido es el sábado.", "ej_en": "The match is on Saturday."}
+    ]
+  },
+  "naturaleza": {
+    "theme_en": "Nature",
+    "theme_es": "La naturaleza",
+    "words": [
+      {"es": "el árbol", "en": "the tree", "level": "a1", "ej": "El árbol es muy alto.", "ej_en": "The tree is very tall."},
+      {"es": "la flor", "en": "the flower", "level": "a1", "ej": "La flor es de cempasúchil.", "ej_en": "The flower is a marigold."},
+      {"es": "el río", "en": "the river", "level": "a2", "ej": "El río está contaminado.", "ej_en": "The river is polluted."},
+      {"es": "la montaña", "en": "the mountain", "level": "a2", "ej": "Subimos la montaña al amanecer.", "ej_en": "We climbed the mountain at dawn."},
+      {"es": "el volcán", "en": "the volcano", "level": "b1", "ej": "El volcán está activo.", "ej_en": "The volcano is active."},
+      {"es": "la selva", "en": "the jungle", "level": "b1", "ej": "La selva tiene muchos animales.", "ej_en": "The jungle has many animals."}
+    ]
+  },
+  "emociones": {
+    "theme_en": "Feelings & emotions",
+    "theme_es": "Sentimientos",
+    "words": [
+      {"es": "feliz", "en": "happy", "level": "a1", "ej": "Estoy muy feliz hoy.", "ej_en": "I'm very happy today."},
+      {"es": "triste", "en": "sad", "level": "a1", "ej": "Estoy triste por la noticia.", "ej_en": "I'm sad about the news."},
+      {"es": "cansado", "en": "tired", "level": "a1", "ej": "Estoy cansado después del trabajo.", "ej_en": "I'm tired after work."},
+      {"es": "enojado", "en": "angry", "level": "a2", "ej": "No estoy enojado, tranquilo.", "ej_en": "I'm not angry, calm down."},
+      {"es": "nervioso", "en": "nervous", "level": "a2", "ej": "Estoy nervioso antes del examen.", "ej_en": "I'm nervous before the exam."},
+      {"es": "emocionado", "en": "excited", "level": "a2", "ej": "Estoy emocionado por el viaje.", "ej_en": "I'm excited about the trip."},
+      {"es": "frustrado", "en": "frustrated", "level": "b2", "ej": "Me siento frustrado con el proyecto.", "ej_en": "I feel frustrated with the project."}
+    ]
+  },
+  "tecnologia": {
+    "theme_en": "Technology",
+    "theme_es": "Tecnología",
+    "words": [
+      {"es": "el teléfono", "en": "the phone", "level": "a1", "ej": "Mi teléfono está cargando.", "ej_en": "My phone is charging."},
+      {"es": "la computadora", "en": "the computer", "level": "a1", "ej": "Trabajo en la computadora.", "ej_en": "I work on the computer."},
+      {"es": "la internet", "en": "the internet", "level": "a2", "ej": "La internet está lenta hoy.", "ej_en": "The internet is slow today."},
+      {"es": "la aplicación", "en": "the app", "level": "a2", "ej": "Descargué una aplicación nueva.", "ej_en": "I downloaded a new app."},
+      {"es": "la contraseña", "en": "the password", "level": "a2", "ej": "Olvidé mi contraseña.", "ej_en": "I forgot my password."},
+      {"es": "el mensaje", "en": "the message", "level": "a1", "ej": "Recibí un mensaje de mi mamá.", "ej_en": "I got a message from my mom."}
+    ]
+  },
+  "negocios": {
+    "theme_en": "Business & formal",
+    "theme_es": "Negocios y formal",
+    "words": [
+      {"es": "la negociación", "en": "the negotiation", "level": "b2", "ej": "La negociación duró toda la tarde.", "ej_en": "The negotiation lasted all afternoon."},
+      {"es": "el cliente", "en": "the client", "level": "b1", "ej": "El cliente quiere un descuento.", "ej_en": "The client wants a discount."},
+      {"es": "la propuesta", "en": "the proposal", "level": "b1", "ej": "Envié la propuesta por correo.", "ej_en": "I sent the proposal by email."},
+      {"es": "el beneficio", "en": "the benefit / profit", "level": "b2", "ej": "El beneficio aumentó un veinte por ciento.", "ej_en": "The profit increased by twenty percent."},
+      {"es": "la inversión", "en": "the investment", "level": "b2", "ej": "La inversión fue arriesgada.", "ej_en": "The investment was risky."},
+      {"es": "el mercado", "en": "the market (economics)", "level": "b2", "ej": "El mercado está en caída.", "ej_en": "The market is falling."},
+      {"es": "la competencia", "en": "the competition", "level": "b2", "ej": "La competencia subió los precios.", "ej_en": "The competition raised the prices."},
+      {"es": "la sostenibilidad", "en": "the sustainability", "level": "c1", "ej": "La sostenibilidad es clave para la empresa.", "ej_en": "Sustainability is key for the company."},
+      {"es": "el marco regulatorio", "en": "the regulatory framework", "level": "c1", "ej": "El marco regulatorio cambió este año.", "ej_en": "The regulatory framework changed this year."},
+      {"es": "la rentabilidad", "en": "the profitability", "level": "c1", "ej": "La rentabilidad depende de los costos.", "ej_en": "Profitability depends on the costs."}
     ]
   }
 }

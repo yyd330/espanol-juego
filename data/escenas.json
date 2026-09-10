@@ -1,33 +1,170 @@
 {
   "escenas": [
     {
+      "title": "Hola, ¿quién eres?",
+      "level": "0",
+      "texto": "— Buenos días. ¿Cómo te llamas? — Me llamo Sofía. ¿Y tú? — Yo soy Luis. Mucho gusto. — ¡Mucho gusto! — De dónde eres tú, Luis? — Soy de Guadalajara. — ¿Cómo estás hoy? — Bien, gracias. ¿Y tú? — Bien también.",
+      "questions": [
+        {"q": "¿Cómo se llama ella?", "options": ["Sofía", "Luis", "Ana", "Rosa"], "answer": 0},
+        {"q": "¿De dónde es Luis?", "options": ["De CDMX", "De Guadalajara", "De Oaxaca", "De Monterrey"], "answer": 1},
+        {"q": "¿Cómo están ellos?", "options": ["Mal", "Cansados", "Bien", "Enojados"], "answer": 2},
+        {"q": "¿Qué hora del día es?", "options": ["Noche", "Tarde", "Mañana", "Mediodía"], "answer": 2}
+      ]
+    },
+    {
+      "title": "La familia de Ana",
+      "level": "a1",
+      "texto": "Ana tiene tres hermanos: un hermano mayor y dos hermanas menores. Su abuelo se llama don Pedro y vive con ellos. La abuela, doña Carmen, cocina muy bien. Todos los domingos, la familia come juntos en la casa de la abuela.",
+      "questions": [
+        {"q": "¿Cuántos hermanos tiene Ana?", "options": ["Dos", "Tres", "Cuatro", "Ninguno"], "answer": 1},
+        {"q": "¿Cómo se llama el abuelo?", "options": ["Don Pedro", "Don Carlos", "Don Luis", "Don Miguel"], "answer": 0},
+        {"q": "¿Qué hace doña Carmen?", "options": ["Trabaja", "Viaja", "Cocina muy bien", "Estudia"], "answer": 2},
+        {"q": "¿Cuándo comen juntos?", "options": ["Los lunes", "Todos los días", "En Navidad", "Los domingos"], "answer": 3}
+      ]
+    },
+    {
       "title": "En la taquería",
       "level": "a2",
-      "texto": "María llegó a la taquería a las dos de la tarde. Pidió un taco de asada y una cerveza fría. El mozo fue muy amable y le trajo una extra sin cobrar. María pagó con tarjeta y dejó una propina generosa.",
+      "texto": "— ¡Buenas tardes! ¿Qué le pongo? — Tres tacos de asada y un agua mineral, por favor. — ¿Sin picante? — No, con un poco de salsa, pero no mucho. — Perfecto. Son sesenta pesos. — Aquí tiene. — ¿La cuenta aquí o a su mesa? — Aquí, por favor. Gracias.",
       "questions": [
-        {"q": "¿Qué pidió María?", "options": ["Un taco de carne asada y una cerveza", "Un pozole y agua", "Tres tacos de pollo"], "answer": 0},
-        {"q": "¿Cómo se portó el mozo?", "options": ["Estuvo amable", "Estuvo lento y malhumorado", "No la atendió"], "answer": 0},
-        {"q": "¿Cómo pagó María?", "options": ["Con efectivo", "Con tarjeta", "No pagó"], "answer": 1}
+        {"q": "¿Qué pidió el cliente?", "options": ["Dos tacos de bistec", "Tres tacos de asada y un agua", "Un pozole", "Cuatro tacos de pescado"], "answer": 1},
+        {"q": "¿Cuánto cuesta la orden?", "options": ["Cincuenta pesos", "Cien pesos", "Sesenta pesos", "Ochenta pesos"], "answer": 2},
+        {"q": "¿Cómo quiere la salsa el cliente?", "options": ["Sin salsa", "Muy picante", "Un poco, no mucho", "Doble"], "answer": 2},
+        {"q": "¿Dónde paga el cliente?", "options": ["En su mesa", "En la caja", "Por teléfono", "En la puerta"], "answer": 1}
       ]
     },
     {
-      "title": "El viaje al centro",
+      "title": "Un viaje a Oaxaca",
+      "level": "a2",
+      "texto": "María viaja a Oaxaca el viernes. Toma el autobús en la estación central a las siete de la mañana. El viaje dura cinco horas. En Oaxaca, se queda con su tía en un hotel pequeño. Quiere visitar el mercado, probar el mole y tomar fotos de las calles coloridas.",
+      "questions": [
+        {"q": "¿Cómo viaja María?", "options": ["En avión", "En tren", "En autobús", "En taxi"], "answer": 2},
+        {"q": "¿A qué hora sale el autobús?", "options": ["A las 7 a. m.", "A las 12 m.", "A las 5 p. m.", "A las 9 a. m."], "answer": 0},
+        {"q": "¿Cuánto dura el viaje?", "options": ["Dos horas", "Cinco horas", "Ocho horas", "Un día"], "answer": 1},
+        {"q": "¿Dónde se queda María?", "options": ["En casa", "En un hotel", "Con un amigo", "En la estación"], "answer": 1}
+      ]
+    },
+    {
+      "title": "La entrevista de trabajo",
       "level": "b1",
-      "texto": "Pedro quería llegar a la estación antes de las nueve. Sin embargo, había un atolladero enorme en la avenida principal. Su hermana le sugirió tomar el desvío por la calle Madero, pero el semáforo estaba roto. Finalmente, llegó a la estación a las nueve y media, justo cuando el tren arrancó.",
+      "texto": "— Buenas tardes, ing. Ramírez. Gracias por su tiempo. — No hay de qué. Hableme de usted. — Llevo cinco años trabajando en logística para una empresa de manufactura. Dirigí un equipo de doce personas. — Interesante. ¿Por qué desea cambiar de empleo? — Busco una oportunidad con más responsabilidades. La empresa de ustedes me interesa porque exporta a tres países. — Muy bien. Su sueldo actual es… — Noventa mil pesos mensuales. — Entiendo. Le llamamos el martes.",
       "questions": [
-        {"q": "¿Por qué no tomó Pedro la calle Madero?", "options": ["Porque estaba prohibida", "Porque el semáforo estaba roto", "Porque no la conocía"], "answer": 1},
-        {"q": "¿A qué hora llegó Pedro a la estación?", "options": ["A las nueve en punto", "A las nueve y media", "A las diez"], "answer": 1},
-        {"q": "¿Qué le sugirió su hermana?", "options": ["Tomar el desvío por Madero", "Esperar un taxi", "Volver a casa"], "answer": 0}
+        {"q": "¿Cuánto tiempo lleva trabajando el candidato?", "options": ["Dos años", "Cinco años", "Diez años", "Un año"], "answer": 1},
+        {"q": "¿Qué dirigió el candidato?", "options": ["Una fábrica", "Un proyecto", "Un equipo de doce personas", "Una oficina"], "answer": 2},
+        {"q": "¿Por qué quiere cambiar de empleo?", "options": ["Por el sueldo", "Por más responsabilidades", "Por el clima", "Por el jefe"], "answer": 1},
+        {"q": "¿Cuándo lo llamará la empresa?", "options": ["El lunes", "El martes", "El viernes", "La próxima semana"], "answer": 1},
+        {"q": "¿Cuál es su sueldo actual?", "options": ["Ochenta mil", "Cien mil", "Noventa mil", "Sesenta mil"], "answer": 2}
       ]
     },
     {
-      "title": "La junta del viernes",
-      "level": "b2",
-      "texto": "El director anunció que la quiebra de un proveedor había retrasado la nómina de octubre. Los empleados estaban inquietos, pero el fideicomiso de la empresa cubriría el atraso. La emprendedora que dirigía el proyecto pidió una junta extra para reestructurar el presupuesto antes de la próxima junta de accionistas.",
+      "title": "En el consultorio",
+      "level": "b1",
+      "texto": "— Doctor, me duele la garganta y tengo fiebre desde ayer. — ¿Desde cuándo come poco? — Desde el miércoles, doctor. No duermo bien. — Tome. Esto es un termómetro. ¿Tiene alergias a la penicilina? — No, doctor. — Le voy a recetar antibióticos y reposo. Si en tres días no mejora, vuelva y le hago un análisis de sangre.",
       "questions": [
-        {"q": "¿Qué causó el retraso de la nómina?", "options": ["La quiebra de un proveedor", "Una huelga", "Un error de contabilidad"], "answer": 0},
-        {"q": "¿Quién pidió la junta extra?", "options": ["El director", "El fideicomiso", "La emprendedora del proyecto"], "answer": 2},
-        {"q": "¿Qué cubriría el atraso?", "options": ["El fideicomiso de la empresa", "Los propios empleados", "Nadie"], "answer": 0}
+        {"q": "¿Qué le duele al paciente?", "options": ["La cabeza", "La garganta", "El estómago", "La espalda"], "answer": 1},
+        {"q": "¿Desde cuándo no come bien?", "options": ["Desde ayer", "Desde el lunes", "Desde el miércoles", "Desde hace una semana"], "answer": 2},
+        {"q": "¿Qué le receta el doctor?", "options": ["Solo reposo", "Antibióticos y reposo", "Un análisis", "Vitaminas"], "answer": 1},
+        {"q": "¿Qué pasa si no mejora?", "options": ["No pasa nada", "Va al dentista", "Vuelve y le hacen un análisis", "Deja de tomar la medicina"], "answer": 2}
+      ]
+    },
+    {
+      "title": "Un correo de la empresa",
+      "level": "b1",
+      "texto": "Estimado equipo: les informo que la reunión del viernes se cancela por la tormenta eléctrica. La nueva fecha es el lunes a las diez. Por favor, envíen sus informes antes de esa fecha. El café y los panes dulces, como siempre, estarán listos. Gracias por su comprensión.",
+      "questions": [
+        {"q": "¿Por qué se cancela la reunión?", "options": ["Por la lluvia", "Por la tormenta eléctrica", "Por el jefe", "Por la huelga"], "answer": 1},
+        {"q": "¿Cuándo es la nueva reunión?", "options": ["El viernes", "El lunes", "El sábado", "El miércoles"], "answer": 1},
+        {"q": "¿Qué deben enviar los empleados?", "options": ["Sus vacaciones", "Sus informes", "Su sueldo", "Sus llaves"], "answer": 1},
+        {"q": "¿Qué habrá en la reunión?", "options": ["Café y panes dulces", "Solo café", "Una cena", "Nada"], "answer": 0}
+      ]
+    },
+    {
+      "title": "La abuela cocina mole",
+      "level": "b1",
+      "texto": "Todos los domingos, la abuela Carmen prepara su mole negro. Primero tuesta los chiles y las almendras en una olla grande. Después los bate en la licuadora con el chocolate y las especias. Mientras tanto, la familia puebla la mesa. El mole se cocina lento, como tres horas. El olor llena toda la casa. 'La prisa es mala consejera', dice doña Carmen, y revuelve con su cuchara de madera.",
+      "questions": [
+        {"q": "¿Qué tipo de mole prepara doña Carmen?", "options": ["Mole verde", "Mole rojo", "Mole negro", "Mole de olla"], "answer": 2},
+        {"q": "¿Qué tuesta primero?", "options": ["El arroz", "Los chiles y las almendras", "El pollo", "Las tortillas"], "answer": 1},
+        {"q": "¿Cuánto se cocina el mole?", "options": ["Una hora", "Dos horas", "Tres horas", "Un día entero"], "answer": 2},
+        {"q": "¿Qué significa 'La prisa es mala consejera'?", "options": ["No hay prisa; hay que tener calma", "Sal corriendo", "La cena está lista", "Tienes que cocinar tú"], "answer": 0}
+      ]
+    },
+    {
+      "title": "El tren nocturno",
+      "level": "b1",
+      "texto": "Javier compró su billete el mes pasado para viajar de la Ciudad de México a la Ciudad de Durango. El tren sale a las once de la noche. En el vagón, los pasajeros conversan bajito. Una señora comparte sus galletas; un hombre lee una novela de García Márquez. Javier, que viaja por primera vez, no puede dormir: observa el paisaje, las luces de los pueblos que pasan, y piensa en la entrevista que tiene el lunes. 'Llego tarde, pero llego descansado', se dice, y por fin cierra los ojos.",
+      "questions": [
+        {"q": "¿De dónde a dónde viaja Javier?", "options": ["CDMX a Oaxaca", "CDMX a Durango", "Guadalajara a Monterrey", "Toluca a CDMX"], "answer": 1},
+        {"q": "¿Por qué viaja Javier?", "options": ["Por placer", "Por una entrevista de trabajo", "Para visitar a su abuela", "Por negocios"], "answer": 1},
+        {"q": "¿Qué lee el hombre del vagón?", "options": ["Un diario", "Una novela de García Márquez", "Un manual", "Su contrato"], "answer": 1},
+        {"q": "¿Por qué no puede dormir al principio?", "options": ["Por el frío", "Por la cena", "Porque viaja por primera vez", "Por el ruido del teléfono"], "answer": 2}
+      ]
+    },
+    {
+      "title": "Una queja en el banco",
+      "level": "b2",
+      "texto": "— Buenas tardes, soy cliente de esta sucursal desde 2015. Llevo tres semanas intentando activar mi línea de crédito y nadie me da una respuesta. — Le pido disculpas por la molestia. Veo en el sistema que su solicitud está en revisión; el tiempo promedio es de quince días hábiles. — Ya llevan veintitrés. Y si no aprueban mi crédito, mi proveedor no me extendió el plazo y no puedo cubrir mis obligaciones. — Le ofrezco dos opciones: puedo escalar su caso a mi supervisor hoy mismo, o agendar una cita con el área de crédito para el jueves. — Escálalo hoy, por favor. Necesito una solución, no una cita.",
+      "questions": [
+        {"q": "¿Qué intenta activar el cliente?", "options": ["Su tarjeta de débito", "Su línea de crédito", "Su cuenta de ahorro", "Su servicio de internet"], "answer": 1},
+        {"q": "¿Cuánto tiempo lleva esperando?", "options": ["Una semana", "Dos semanas", "Tres semanas", "Un mes"], "answer": 2},
+        {"q": "¿Cuál es el tiempo promedio de revisión?", "options": ["Cinco días", "Quince días hábiles", "Tres semanas", "Un mes"], "answer": 1},
+        {"q": "¿Qué opción elige el cliente?", "options": ["La cita del jueves", "Escalar el caso hoy", "Ninguna, se va", "Hablar con otro banco"], "answer": 1},
+        {"q": "¿Por qué le urge al cliente el crédito?", "options": ["Por una vacaciones", "Porque su proveedor no le extendió el plazo", "Por comprar una casa", "Por la universidad de su hija"], "answer": 1}
+      ]
+    },
+    {
+      "title": "El artículo de opinión",
+      "level": "b2",
+      "texto": "El teletrabajo dejó de ser una excepción para convertirse en la norma en muchas empresas. Sin embargo, los expertos advierten que la productividad no depende de la oficina, sino de la autonomía y la confianza. Quien controla por horas trabajadas, obtiene más horas; quien controla por resultados, obtiene mejores resultados. El reto, señalan, no es tecnológico sino cultural: aprender a medir el trabajo que se hace, no la presencia de quien lo hace.",
+      "questions": [
+        {"q": "¿Qué afirma el artículo sobre el teletrabajo?", "options": ["Es temporal", "Se volvió la norma en muchas empresas", "Es ilegal", "Solo funciona en tecnología"], "answer": 1},
+        {"q": "Según los expertos, ¿de qué depende la productividad?", "options": ["De la oficina", "De la autonomía y la confianza", "Del sueldo", "De la edad del empleado"], "answer": 1},
+        {"q": "¿Qué obtiene quien controla por horas?", "options": ["Mejores resultados", "Más horas", "Menos estrés", "Promociones"], "answer": 1},
+        {"q": "¿Cómo califica el artículo el verdadero reto?", "options": ["Tecnológico", "Económico", "Cultural", "Legal"], "answer": 2}
+      ]
+    },
+    {
+      "title": "La llamada a la aerolínea",
+      "level": "b2",
+      "texto": "— Buenos días, llamo porque mi vuelo a Cancún sale en dos horas y todavía no he podido facturar mi equipaje en línea. — Entiendo su preocupación. ¿Me puede proporcionar su número de confirmación? — Sí, es el KX9942. — Gracias. Reviso... Veo que su vuelo fue reprogramado para el jueves a las tres de la tarde. Por eso el sistema no le permite facturar: el vuelo de hoy no existe. — ¿Y mi habitación en el hotel? Reservé solo por la noche. — Puede reasignarse su vuelo al viernes en el sistema de otra aerolínea asociada, sin costo. Le enviaré el comprobante por correo en unos minutos.",
+      "questions": [
+        {"q": "¿A qué ciudad viaja el cliente?", "options": ["A Oaxaca", "A Cancún", "A Acapulco", "A Tijuana"], "answer": 1},
+        {"q": "¿Por qué no pudo facturar en línea?", "options": ["Porque se olvidó", "Porque el vuelo fue reprogramado", "Porque el equipaje era grande", "Por la tarjeta de crédito"], "answer": 1},
+        {"q": "¿Para cuándo reprogramaron su vuelo?", "options": ["El viernes", "El jueves", "El mismo día", "En una semana"], "answer": 1},
+        {"q": "¿Qué le ofrece la aerolínea?", "options": ["Un cupón de comida", "Reasignar su vuelo sin costo", "Un hotel gratis", "Nada"], "answer": 1}
+      ]
+    },
+    {
+      "title": "El consejo del notario",
+      "level": "c1",
+      "texto": "— Doctor, mi socio y yo queremos constituir una sociedad por acciones simplificada. ¿Qué conviene para nuestro caso? — Depende. Si uno de ustedes aportará capital y el otro aportará trabajo, la S.A.S. les permite distribuir derechos de manera flexible: acciones sin voto, clases de acciones. Tengan cuidado con el pacto de socios: es donde se regulan las salidas, las opciones de compra y la transmisión de acciones. Un pacto bien redactado evita el sesenta por ciento de los litigios societarios que veo en mi despacho.",
+      "questions": [
+        {"q": "¿Qué tipo de sociedad quieren constituir?", "options": ["Una sociedad civil", "Una S.A.S.", "Una E.N.T.R.E.", "Una filial extranjera"], "answer": 1},
+        {"q": "¿Qué permite la S.A.S. según el notario?", "options": ["No pagar impuestos", "Distribuir derechos de manera flexible", "Evitar el contrato", "Trabajar sin registro"], "answer": 1},
+        {"q": "¿Qué regula el pacto de socios?", "options": ["Los salarios", "Las salidas y la transmisión de acciones", "La ubicación", "Los horarios"], "answer": 1},
+        {"q": "¿Qué proporción de litigios evitaría un buen pacto?", "options": ["Un diez por ciento", "La mitad", "El sesenta por ciento", "El cien por ciento"], "answer": 2}
+      ]
+    },
+    {
+      "title": "La receta de la abuela",
+      "level": "a1",
+      "texto": "Para hacer tacos de queso, necesitas tortillas, queso, y un poco de salsa. Primero, calienta las tortillas en la comal. Después, pon el queso encima. Al final, agrega la salsa. ¡Están listos! Son mi comida favorita.",
+      "questions": [
+        {"q": "¿Qué necesitas para hacer tacos de queso?", "options": ["Arroz y frijoles", "Tortillas, queso y salsa", "Panes y jamón", "Pastas y carne"], "answer": 1},
+        {"q": "¿Dónde calientas las tortillas?", "options": ["En el horno", "En la olla", "En el comal", "En la estufa"], "answer": 2},
+        {"q": "¿Qué va al final?", "options": ["El queso", "La salsa", "El huevo", "La lechuga"], "answer": 1},
+        {"q": "¿Cuál es la comida favorita de la abuela?", "options": ["Los tacos de queso", "El pozole", "Los tamales", "La sopa"], "answer": 0}
+      ]
+    },
+    {
+      "title": "La cita en la clínica",
+      "level": "a2",
+      "texto": "— Buenos días, soy el doctor Herrera. ¿Qué le pasa? — Llevo dos días con dolor de estómago y me da náuseas. — ¿Comió algo diferente? — Sí, comí mariscos el viernes. — Probablemente fue una intoxicación alimentaria. Tome agua, coma arroz y descanso. Si la fiebre sube, vuelva. — ¿Puedo trabajar mañana? — Mejor no. Descanse al menos un día.",
+      "questions": [
+        {"q": "¿Qué le pasa al paciente?", "options": ["Dolor de cabeza", "Dolor de estómago y náuseas", "Fiebre alta", "Tos"], "answer": 1},
+        {"q": "¿Qué comió el viernes?", "options": ["Tacos", "Pizza", "Mariscos", "Sopa"], "answer": 2},
+        {"q": "¿Qué cree el doctor?", "options": ["Alergia", "Intoxicación alimentaria", "Influenza", "Dolor muscular"], "answer": 1},
+        {"q": "¿Puede trabajar mañana?", "options": ["Sí, sin problema", "Mejor no, descansar", "Solo media jornada", "No lo dice"], "answer": 1}
       ]
     }
   ]

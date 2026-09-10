@@ -1,71 +1,96 @@
-# 🇲🇽 Español Juego
+# Español Juego 🇲🇽
 
-A **web** Spanish learning game for a Latin American (Mexican) dialect learner at
-A2 → B2 level. Play it in any browser — on your laptop, phone, or tablet — from your
-own Wi-Fi, or anywhere it's hosted.
+A Spanish **learning** game (not just a quiz) for Mexican/Latin American Spanish.
+**Teach first, then quiz.** Levels **0 → C1** — absolute beginners to advanced.
 
-## 📱 Play in your browser
+**Zero Python. Zero frameworks.** Two ways to play, sharing one content bank:
 
-The game is plain **HTML + CSS + JavaScript** (no build step, no dependencies). Two ways to run it:
+| Version | Tech | How to play |
+|---|---|---|
+| 🌐 **Web** | HTML + CSS + JS (vanilla) | `./serve.sh` → open on any phone/laptop in your Wi-Fi |
+| 💻 **Terminal** | pure bash + jq | `./juego.sh` |
 
-### Option A — serve it on your local network (phones + laptops on the same Wi-Fi)
+No build step, no dependencies beyond `gcc` (web) and `jq` (terminal).
+
+---
+
+## 🌐 Web game (recommended)
+
 ```bash
 cd espanol-juego
-python3 serve.py            # default port 8321
-#   python3 serve.py 9000   # custom port
-```
-It prints a URL like `http://192.168.1.241:8321/web/`. Open that on any device on the
-same network. Only needs `python3` (standard library). Stop with **Ctrl+C**.
-
-> If a phone can't connect: check that the machine's firewall allows the port, and that
-> the phone and machine are on the same Wi-Fi. The printed IP is your machine's LAN address.
-
-### Option B — just open the file
-`web/index.html` works directly: the `data/*.json` files load via `fetch` relative to the
-page, so opening the file from a browser that allows local `fetch` (or a quick
-`python3 -m http.server` in the repo root) is enough to play on one machine.
-
-## 🎮 The game
-
-- **4 modes** + full game:
-  - 📖 **Vocabulario** — thematic ES↔EN (food, travel, work, health; A2→B2)
-  - ✍️ **Conjugación** — pretérito / imperfecto / pretérito-vs-imperfecto, Mexican forms
-    (`salí`, not "he salido")
-  - 📚 **Escenas** — short scenario passages + reading comprehension (A2→B2)
-  - 🔄 **Traducción** — everyday phrases EN↔ES
-- **Rules:** 3 lives ❤️❤️❤️, +10 per correct, streak bonus (+10 every 5 in a row),
-  score tiers Novato → Intermedio → Avanzado → Bilingüe
-- **Accent-insensitive** checking — `salió` / `salio`, `ñ`/`n`, punctuation all accepted,
-  so typing on a phone keyboard never penalizes you
-- Mobile-friendly layout (works in portrait on a phone)
-
-## 📂 Content (edit freely)
-
-The questions come from four JSON banks — add entries and reload the page, the game
-picks them up automatically:
-
-| File | Feeds |
-|---|---|
-| `data/vocabularios.json` | Vocabulario (thematic words, level-tagged) |
-| `data/verbos.json` | Conjugación (preterite / imperfect / mixed) |
-| `data/escenas.json` | Escenas (passage + multiple-choice questions) |
-| `data/frases.json` | Traducción (phrase pairs) |
-
-This JSON content bank is the seed for the monetizable shape: a web/mobile app
-(flashcards + conjugation drills + XP/leaderboard) consumes the exact same files.
-
-## 🕹️ Terminal mode (bonus)
-
-Also playable offline in the terminal:
-```bash
-python3 main.py            # full game
-python3 main.py vocab quick
-python3 main.py conjugar
+./serve.sh            # compiles serve/serve.c with gcc, listens on :8321
 ```
 
-## 🧪 Tests
+It prints a LAN URL like `http://192.168.1.241:8321/web/` — open it on your
+phone, tablet, or laptop (same Wi-Fi). `serve.sh` is shell; if no `gcc` is
+found it falls back to `busybox httpd` (static files only).
+
+### Modes
+- **📚 Aprender** — flashcards first (word → flip → meaning + example
+  sentence), then an **automatic quiz on exactly what you just studied**.
+- **🗣️ Vocabulario** — quiz by theme + level range.
+- **⏳ Conjugar** — a **mini-lesson** on the tense group (ser/ir, pretérito,
+  imperfecto, condicional, subjuntivo…) is shown *before* the quiz starts.
+- **🎬 Escenas** — short real dialogues (taquería, pharmacy, airport, job
+  interview…) with reading-comprehension questions.
+- **↔️ Traducir** — phrases, Spanish → English.
+
+### Game rules
+- 10 points per correct answer, 3 lives, streak of 5 → +10 bonus.
+- Accent- and punctuation-insensitive typing (`salio` matches `salió`) —
+  phone-friendly.
+- Pick your level range (0, a1, a2, b1, b2, c1) and round size (5 or 10).
+- Score tiers: Novato → Intermedio → Avanzado → Bilingüe.
+
+## 💻 Terminal game
 
 ```bash
-python3 -m pytest -q     # terminal engine + data integrity
-node tests/test_web.js   # web game logic (runs the real game.js against real JSON)
+./juego.sh            # interactive menu
+./juego.sh aprender comida        # flashcards + quiz on one theme
+./juego.sh vocab 0 a1            # straight vocab quiz, levels 0→A1
+./juego.sh conjugar presente     # mini-lesson + conjugation quiz
+./juego.sh escenas 0 c1
+./juego.sh trad a2 b2
+```
+
+Requires `bash` 4+ and `jq` (`apt install jq` / `brew install jq`).
+
+---
+
+## Content bank (`data/*.json` — shared by both versions)
+
+| File | Size | Coverage |
+|---|---|---|
+| `vocabularios.json` | 154 words, 11 themes | 0→C1, every word has an example sentence + English gloss |
+| `verbos.json` | 60 items, 6 tense groups | present → subjunctive; each group carries a mini-lesson |
+| `escenas.json` | 15 dialogues, 62 questions | 0→B2, multiple-choice reading comprehension |
+| `frases.json` | 31 survival phrases | 0→B2 |
+
+Mexican-dialect focus: *tacos, pozole, sobremesa, "el metro", "un vaso de
+agua"*, pretérito over present perfect (*salí*, not *he salido*), etc.
+
+To add content, edit the JSON files — both versions pick it up on next
+start. Keep the schemas:
+- vocab: `{theme: {theme_en, theme_es, words: [{es, en, level, ej, ej_en}]}}`
+- verbs: `{group: {note, lesson, verbs: [{verb, person, answer, sentence, clue}]}}`
+- scenes: `{escenas: [{title, level, texto, questions: [{q, options[], answer}]}]}`
+- phrases: `{frases: [{es, en, level}]}`
+
+## Tests
+
+```bash
+node tests/test_web.js     # runs the REAL game.js against the REAL JSON (no python)
+./serve.sh &  # then: curl -s http://127.0.0.1:8321/web/game.js | head
+bash juego.sh trad 0 a1    # smoke-test the terminal loop
+```
+
+## Project layout
+
+```
+├── serve.sh              # LAN server launcher (shell; compiles C server)
+├── serve/serve.c         # tiny static file server (C11, no deps)
+├── juego.sh              # terminal game (bash + jq)
+├── web/                  # web game: index.html, style.css, game.js
+├── data/                 # shared content bank (JSON)
+└── tests/test_web.js     # Node vm-sandbox test for web/game.js
 ```

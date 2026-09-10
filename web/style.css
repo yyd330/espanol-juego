@@ -70,6 +70,7 @@ header h1 { font-size: 2rem; letter-spacing: 1px; }
 @keyframes pop { 0% { transform: scale(0.6); } 100% { transform: scale(1); } }
 
 .q-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 6px; }
+.q-context { background: var(--card-2); border-left: 3px solid var(--accent); border-radius: 8px; padding: 14px; margin-bottom: 14px; font-size: 0.95rem; line-height: 1.55; color: var(--text); white-space: pre-wrap; max-height: 220px; overflow-y: auto; }
 .q-text { font-size: 1.3rem; line-height: 1.45; background: var(--card); border-radius: 12px; padding: 18px; margin-bottom: 14px; white-space: pre-wrap; }
 .q-clue { color: var(--accent-2); font-size: 0.9rem; margin-bottom: 12px; }
 
@@ -110,6 +111,37 @@ header h1 { font-size: 2rem; letter-spacing: 1px; }
 #results-detail { color: var(--muted); line-height: 1.6; margin-bottom: 22px; }
 .results-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 .results-actions .mode-btn { flex: 1; min-width: 140px; }
+
+/* menu extras */
+.menu-section { margin: 18px 0 6px; }
+.mode-learn { background: linear-gradient(135deg, #7c3aed, #f59e0b); color: #fff; font-weight: 700; font-size: 1.1rem; }
+.mode-learn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.menu-options { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 10px; }
+.menu-link { background: transparent; border: 1px solid var(--muted); color: var(--muted); padding: 8px 14px; font-size: 0.85rem; }
+.menu-link:hover { color: var(--text); border-color: var(--text); }
+
+/* lesson */
+.lesson-card { background: var(--card); border-radius: 16px; padding: 30px 22px; margin-top: 24px; }
+.lesson-emoji { font-size: 3rem; text-align: center; margin-bottom: 12px; }
+.lesson-card h2 { color: var(--accent); text-align: center; margin-bottom: 16px; }
+.lesson-text { white-space: pre-wrap; line-height: 1.7; color: var(--text); font-size: 1rem; background: var(--card-2); border-radius: 10px; padding: 16px; max-height: 45vh; overflow-y: auto; }
+.lesson-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+.lesson-actions .mode-btn { flex: 1; min-width: 150px; }
+
+/* learn / flashcards */
+.flashcard { background: var(--card); border-radius: 18px; padding: 26px 20px; margin-top: 8px; text-align: center; min-height: 340px; display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+.fc-level { color: var(--muted); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; }
+.fc-word { font-size: 2.6rem; font-weight: 700; color: var(--accent-2); line-height: 1.2; }
+.fc-reveal { border-top: 1px dashed var(--muted); padding-top: 14px; margin-top: 6px; animation: fadeIn 0.25s; }
+.fc-en { font-size: 1.5rem; font-weight: 600; margin-bottom: 10px; }
+.fc-ej { font-size: 1.05rem; font-style: italic; color: var(--text); line-height: 1.5; }
+.fc-ej-en { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+.fc-hint { color: var(--muted); font-size: 0.8rem; }
+.flashcard .mode-btn { margin-top: 8px; }
+.fc-know { display: flex; gap: 10px; }
+.fc-know .mode-btn { flex: 1; }
+.know-yes { background: rgba(34, 197, 94, 0.2); border-color: var(--green); }
+.know-no { background: rgba(245, 158, 11, 0.15); border-color: var(--accent); }
 
 @media (max-width: 480px) {
   .mode-grid { grid-template-columns: 1fr; }

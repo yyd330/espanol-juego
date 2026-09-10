@@ -1,37 +1,115 @@
 {
-  "tense": "pretérito",
-  "note": "Mexican Spanish focus: salir → salí (no 'he salido'); ser/ir/tener high-frequency.",
+  "note": "Mexican Spanish focus: salir → salí (no 'he salido'); ser/ir/tener high-frequency. Groups are leveled: presente 0→A1, pretérito A2→B1, imperfecto B1, mixto B1→B2, condicional B1, subjuntivo B2→C1.",
+  "presente": {
+    "tense": "presente",
+    "lesson": "El presente: present-tense actions and habits. Yo como, tú comes, él come, nosotros comemos, vosotros coméis, ellos comen. Irregulars: ser (soy, eres, es, somos, son), estar (estoy, estás, está, estamos, están), ir (voy, vas, va, vamos, van), tener (tengo, tienes, tiene, tenemos, tienen), poder (puedo, puedes, puede).",
+    "verbs": [
+      {"inf": "ser", "person": "yo", "level": "0", "answer": "soy", "sentence": "Yo ___ estudiante de español.", "clue": "ser (to be — identity) — present"},
+      {"inf": "ser", "person": "usted", "level": "0", "answer": "es", "sentence": "¿Usted ___ de México?", "clue": "ser (to be) — present"},
+      {"inf": "estar", "person": "yo", "level": "0", "answer": "estoy", "sentence": "Yo ___ cansado hoy.", "clue": "estar (to be — state) — present"},
+      {"inf": "ir", "person": "yo", "level": "0", "answer": "voy", "sentence": "Yo ___ al mercado ahora.", "clue": "ir (to go) — present"},
+      {"inf": "ir", "person": "nosotros", "level": "a1", "answer": "vamos", "sentence": "Nosotros ___ a la playa el domingo.", "clue": "ir (to go) — present"},
+      {"inf": "tener", "person": "yo", "level": "a1", "answer": "tengo", "sentence": "Yo ___ hambre, quiero comer.", "clue": "tener (to have) — present"},
+      {"inf": "tener", "person": "tú", "level": "a1", "answer": "tienes", "sentence": "¿Tú ___ dos hermanos?", "clue": "tener (to have) — present"},
+      {"inf": "poder", "person": "yo", "level": "a1", "answer": "puedo", "sentence": "Yo ___ hablar un poco de español.", "clue": "poder (to be able to) — present"},
+      {"inf": "querer", "person": "él", "level": "a1", "answer": "quiere", "sentence": "Él ___ café con leche.", "clue": "querer (to want) — present"},
+      {"inf": "comer", "person": "nosotros", "level": "a1", "answer": "comemos", "sentence": "Nosotros ___ tacos los viernes.", "clue": "comer (to eat) — present"},
+      {"inf": "vivir", "person": "ella", "level": "a1", "answer": "vive", "sentence": "Ella ___ en Monterrey.", "clue": "vivir (to live) — present"},
+      {"inf": "hablar", "person": "tú", "level": "0", "answer": "hablas", "sentence": "¿Tú ___ inglés y español?", "clue": "hablar (to speak) — present"},
+      {"inf": "gustar", "person": "él", "level": "a1", "answer": "gusta", "sentence": "A mí ___ el mole oaxaqueño.", "clue": "gustar (to like — 'to please') — present, él-form"},
+      {"inf": "saber", "person": "yo", "level": "a2", "answer": "sé", "sentence": "Yo ___ cocinar unas buenas enchiladas.", "clue": "saber (to know how to) — present"},
+      {"inf": "conocer", "person": "tú", "level": "a2", "answer": "conoces", "sentence": "¿Tú ___ a mis primos?", "clue": "conocer (to know a person/place) — present"}
+    ]
+  },
   "verbs": [
-    {"inf": "comer", "person": "yo", "answer": "comí", "sentence": "Ayer yo ___ mucho en Oaxaca.", "clue": "comer (to eat) — preterite"},
-    {"inf": "salir", "person": "él", "answer": "salió", "sentence": "Él ___ del estadio a las diez.", "clue": "salir (to leave) — preterite"},
-    {"inf": "poner", "person": "nosotros", "answer": "pusimos", "sentence": "Nosotros ___ la mesa para la cena.", "clue": "poner (to put) — preterite"},
-    {"inf": "ir", "person": "tú", "answer": "fuiste", "sentence": "¿Dónde ___ tú el sábado?", "clue": "ir (to go) — preterite"},
-    {"inf": "venir", "person": "ellos", "answer": "vinieron", "sentence": "Ellos ___ de Monterrey en tren.", "clue": "venir (to come) — preterite"},
-    {"inf": "hacer", "person": "yo", "answer": "hice", "sentence": "Yo ___ el examen de matemáticas.", "clue": "hacer (to do/make) — preterite"},
-    {"inf": "estar", "person": "tú", "answer": "estuviste", "sentence": "¿Tú ___ en Guadalajara en 2020?", "clue": "estar (to be) — preterite"},
-    {"inf": "dormir", "person": "ella", "answer": "durmió", "sentence": "Ella ___ ocho horas ayer.", "clue": "dormir (to sleep) — preterite"},
-    {"inf": "escribir", "person": "él", "answer": "escribió", "sentence": "Él ___ un correo largo.", "clue": "escribir (to write) — preterite"},
-    {"inf": "ver", "person": "nosotros", "answer": "vimos", "sentence": "Nosotros ___ el partido de fútbol.", "clue": "ver (to see/watch) — preterite"}
+    {"inf": "comer", "person": "yo", "level": "a2", "answer": "comí", "sentence": "Ayer yo ___ mucho en Oaxaca.", "clue": "comer (to eat) — preterite"},
+    {"inf": "salir", "person": "él", "level": "a2", "answer": "salió", "sentence": "Él ___ del estadio a las diez.", "clue": "salir (to leave) — preterite"},
+    {"inf": "poner", "person": "nosotros", "level": "a2", "answer": "pusimos", "sentence": "Nosotros ___ la mesa para la cena.", "clue": "poner (to put) — preterite"},
+    {"inf": "ir", "person": "tú", "level": "a2", "answer": "fuiste", "sentence": "¿Dónde ___ tú el sábado?", "clue": "ir (to go) — preterite"},
+    {"inf": "venir", "person": "ellos", "level": "a2", "answer": "vinieron", "sentence": "Ellos ___ de Monterrey en tren.", "clue": "venir (to come) — preterite"},
+    {"inf": "hacer", "person": "yo", "level": "a2", "answer": "hice", "sentence": "Yo ___ el examen de matemáticas.", "clue": "hacer (to do/make) — preterite"},
+    {"inf": "estar", "person": "tú", "level": "a2", "answer": "estuviste", "sentence": "¿Tú ___ en Guadalajara en 2020?", "clue": "estar (to be) — preterite"},
+    {"inf": "dormir", "person": "ella", "level": "a2", "answer": "durmió", "sentence": "Ella ___ ocho horas ayer.", "clue": "dormir (to sleep) — preterite"},
+    {"inf": "escribir", "person": "él", "level": "a2", "answer": "escribió", "sentence": "Él ___ un correo largo.", "clue": "escribir (to write) — preterite"},
+    {"inf": "ver", "person": "nosotros", "level": "a2", "answer": "vimos", "sentence": "Nosotros ___ el partido de fútbol.", "clue": "ver (to see/watch) — preterite"},
+    {"inf": "decir", "person": "ella", "level": "a2", "answer": "dijo", "sentence": "Ella ___ que el tren llega tarde.", "clue": "decir (to say) — preterite"},
+    {"inf": "dar", "person": "tú", "level": "a2", "answer": "diste", "sentence": "¿Tú ___ la propina al mesero?", "clue": "dar (to give) — preterite"},
+    {"inf": "volver", "person": "yo", "level": "b1", "answer": "volví", "sentence": "Yo ___ a casa a las once.", "clue": "volver (to come back) — preterite"},
+    {"inf": "llamar", "person": "él", "level": "a2", "answer": "llamó", "sentence": "Él ___ a su mamá tres veces.", "clue": "llamar (to call) — preterite"},
+    {"inf": "nacer", "person": "yo", "level": "b1", "answer": "nací", "sentence": "Yo ___ en la Ciudad de México.", "clue": "nacer (to be born) — preterite"},
+    {"inf": "construir", "person": "ellos", "level": "b1", "answer": "construyeron", "sentence": "Ellos ___ el puente en un año.", "clue": "construir (to build) — preterite, -y-"},
+    {"inf": "conocer", "person": "nosotros", "level": "b1", "answer": "conocimos", "sentence": "Nosotros ___ a tu familia en la fiesta.", "clue": "conocer (to meet) — preterite"},
+    {"inf": "leer", "person": "tú", "level": "b1", "answer": "leíste", "sentence": "¿Tú ___ el libro de García Márquez?", "clue": "leer (to read) — preterite"},
+    {"inf": "sentir", "person": "ella", "level": "b1", "answer": "sintió", "sentence": "Ella ___ ganas de comer tamales.", "clue": "sentir (to feel) — preterite, stem change"},
+    {"inf": "poder", "person": "yo", "level": "b1", "answer": "pude", "sentence": "Yo ___ llegar antes de la reunión.", "clue": "poder (to manage) — preterite"}
   ],
   "imperfect": {
     "tense": "imperfecto",
+    "lesson": "El imperfecto: descriptions, habits, and ongoing background in the past (CADA DÍA, SÍ, HABÍA). Endings: -aba (comer→comía), -ía (decir→decía). Irregulars: ser (era, eras, era, éramos, eran), ir (iba, ibas, iba, íbamos, iban), ver (veía). Use it for 'what was happening' — the preterite is 'what happened'.",
     "verbs": [
-      {"inf": "ser", "person": "yo", "answer": "era", "sentence": "Cuando niño, yo ___ muy tímido.", "clue": "ser (to be) — imperfect"},
-      {"inf": "tener", "person": "nosotros", "answer": "teníamos", "sentence": "Nosotros ___ un perro llamado Chispa.", "clue": "tener (to have) — imperfect"},
-      {"inf": "ir", "person": "ellos", "answer": "iban", "sentence": "Ellos ___ al mercado todos los días.", "clue": "ir (to go) — imperfect"},
-      {"inf": "decir", "person": "tú", "answer": "decías", "sentence": "Tú ___ muchas mentiras antes.", "clue": "decir (to say) — imperfect"},
-      {"inf": "hacer", "person": "él", "answer": "hacía", "sentence": "Él ___ la cena mientras yo leía.", "clue": "hacer (to do) — imperfect"},
-      {"inf": "poner", "person": "ella", "answer": "ponía", "sentence": "Ella ___ la radio todas las mañanas.", "clue": "poner (to put) — imperfect"}
+      {"inf": "ser", "person": "yo", "level": "b1", "answer": "era", "sentence": "Cuando niño, yo ___ muy tímido.", "clue": "ser (to be) — imperfect"},
+      {"inf": "tener", "person": "nosotros", "level": "b1", "answer": "teníamos", "sentence": "Nosotros ___ un perro llamado Chispa.", "clue": "tener (to have) — imperfect"},
+      {"inf": "ir", "person": "ellos", "level": "b1", "answer": "iban", "sentence": "Ellos ___ al mercado todos los días.", "clue": "ir (to go) — imperfect"},
+      {"inf": "decir", "person": "tú", "level": "b1", "answer": "decías", "sentence": "Tú ___ muchas mentiras antes.", "clue": "decir (to say) — imperfect"},
+      {"inf": "hacer", "person": "él", "level": "b1", "answer": "hacía", "sentence": "Él ___ la cena mientras yo leía.", "clue": "hacer (to do) — imperfect"},
+      {"inf": "poner", "person": "ella", "level": "b1", "answer": "ponía", "sentence": "Ella ___ la radio todas las mañanas.", "clue": "poner (to put/play) — imperfect"},
+      {"inf": "vivir", "person": "yo", "level": "b1", "answer": "vivía", "sentence": "Yo ___ en Oaxaca cuando era joven.", "clue": "vivir (to live) — imperfect"},
+      {"inf": "llamar", "person": "él", "level": "b1", "answer": "llamaba", "sentence": "Él ___ a sus primos cada semana.", "clue": "llamar (to call) — imperfect"},
+      {"inf": "bailar", "person": "nosotros", "level": "b1", "answer": "bailábamos", "sentence": "Nosotros ___ en la fiesta de quince años.", "clue": "bailar (to dance) — imperfect"},
+      {"inf": "querer", "person": "ella", "level": "b1", "answer": "quería", "sentence": "Ella ___ ser maestra cuando era niña.", "clue": "querer (to want) — imperfect"},
+      {"inf": "poder", "person": "yo", "level": "b1", "answer": "podía", "sentence": "Yo ___ correr cinco kilómetros antes.", "clue": "poder (to be able to) — imperfect"},
+      {"inf": "saber", "person": "tú", "level": "b1", "answer": "sabías", "sentence": "Tú ___ cocinar el mole de tu abuela.", "clue": "saber (to know how to) — imperfect"},
+      {"inf": "usar", "person": "ellos", "level": "b1", "answer": "usaban", "sentence": "Ellos ___ el mismo teléfono durante diez años.", "clue": "usar (to use) — imperfect"},
+      {"inf": "dormir", "person": "ella", "level": "b1", "answer": "dormía", "sentence": "Ella ___ mucho antes del café.", "clue": "dormir (to sleep) — imperfect"},
+      {"inf": "estudiar", "person": "yo", "level": "b1", "answer": "estudiaba", "sentence": "Yo ___ contabilidad antes de la universidad.", "clue": "estudiar (to study) — imperfect"}
     ]
   },
   "mixto": {
     "tense": "pretérito vs imperfecto",
+    "lesson": "Pretérito = completed action ('did it, once, done'). Imperfecto = in progress, habitual, or background ('was doing, used to, happened often'). In one story: the imperfecto paints the scene, the pretérito makes it happen. 'Yo ___ (estar) cansado cuando ___ (sonar) el teléfono.'",
     "verbs": [
-      {"person": "yo", "answer": "estaba", "sentence": "Yo ___ cansado cuando sonó el teléfono.", "clue": "estado en progreso (in progress) → imperfect"},
-      {"person": "yo", "answer": "llegué", "sentence": "___ a casa a las 8 y cené con mi familia.", "clue": "acción completa (completed action) → preterite"},
-      {"person": "ella", "answer": "comía", "sentence": "Ella ___ cuando el teléfono sonó.", "clue": "incomplete action interrupted → imperfect"},
-      {"person": "tú", "answer": "encontraste", "sentence": "¿___ tu llave en el bolso?", "clue": "completed, one-time action → preterite"},
-      {"person": "nosotros", "answer": "vivíamos", "sentence": "Nosotros ___ en Monterrey diez años.", "clue": "ongoing past state → imperfect"}
+      {"person": "yo", "level": "b1", "answer": "estaba", "sentence": "Yo ___ cansado cuando sonó el teléfono.", "clue": "estado en progreso (in progress) → imperfect of estar"},
+      {"person": "yo", "level": "b1", "answer": "llegué", "sentence": "___ a casa a las 8 y cené con mi familia.", "clue": "acción completa (completed action) → preterite of llegar"},
+      {"person": "ella", "level": "b1", "answer": "comía", "sentence": "Ella ___ cuando el teléfono sonó.", "clue": "incomplete action interrupted → imperfect of comer"},
+      {"person": "tú", "level": "b1", "answer": "encontraste", "sentence": "¿___ tu llave en el bolso?", "clue": "completed, one-time action → preterite of encontrar"},
+      {"person": "nosotros", "level": "b1", "answer": "vivíamos", "sentence": "Nosotros ___ en Monterrey diez años.", "clue": "ongoing past state → imperfect of vivir"},
+      {"person": "él", "level": "b1", "answer": "leía", "sentence": "Él ___ el periódico mientras ___ (tomar) el café.", "clue": "ongoing simultaneous action → imperfect of leer"},
+      {"person": "ella", "level": "b2", "answer": "terminó", "sentence": "Ella ___ de cenar y puso la mesa.", "clue": "second completed action in a chain → preterite of terminar"},
+      {"person": "yo", "level": "b2", "answer": "soñaba", "sentence": "Yo ___ con los tacos cuando desperté.", "clue": "ongoing when interrupted → imperfect of soñar"},
+      {"person": "tú", "level": "b2", "answer": "perdiste", "sentence": "¿___ el tren por cinco minutos?", "clue": "one-time completed event → preterite of perder"},
+      {"person": "nosotros", "level": "b2", "answer": "hacía", "sentence": "Cuando ___ (hacer) frío, nosotros ___ (poner) la estufa.", "clue": "habitual condition in the past → imperfect of hacer"}
+    ]
+  },
+  "condicional": {
+    "tense": "condicional y futuro",
+    "lesson": "Condicional: polite requests, hypotheticals, 'would' (hablar→hablaría; ir→iría; poder→podría). Futuro simple: plans and predictions (hablar→hablaré; ir→iré; poder→podré). Mexican politeness: '___ (poder) ayudarme?' = ¿Podría ayudarme?",
+    "verbs": [
+      {"inf": "poder", "person": "usted", "level": "b1", "answer": "podría", "sentence": "¿___ usted ayudarme con la maleta?", "clue": "poder (to be able to) — conditional, polite request"},
+      {"inf": "ir", "person": "yo", "level": "b1", "answer": "iría", "sentence": "Yo ___ a Oaxaca si tuviera más tiempo.", "clue": "ir (to go) — conditional"},
+      {"inf": "querer", "person": "tú", "level": "b1", "answer": "querrías", "sentence": "¿___ tú un café con leche?", "clue": "querer (to want) — conditional, polite"},
+      {"inf": "saber", "person": "yo", "level": "b1", "answer": "sabería", "sentence": "No ___ qué decirle a mi jefe.", "clue": "saber (to know) — conditional"},
+      {"inf": "comer", "person": "nosotros", "level": "b1", "answer": "comeríamos", "sentence": "Nosotros ___ en ese restaurante nuevo.", "clue": "comer (to eat) — conditional"},
+      {"inf": "venir", "person": "ellos", "level": "b1", "answer": "vendrían", "sentence": "Ellos ___ a la boda, si pueden.", "clue": "venir (to come) — conditional"},
+      {"inf": "hacer", "person": "yo", "level": "b2", "answer": "haré", "sentence": "Yo ___ la tarea esta noche.", "clue": "hacer (to do) — future simple"},
+      {"inf": "ir", "person": "tú", "level": "b2", "answer": "irás", "sentence": "Tú ___ a la universidad el año que viene.", "clue": "ir (to go) — future simple"},
+      {"inf": "poder", "person": "nosotros", "level": "b2", "answer": "podremos", "sentence": "Nosotros ___ terminarlo antes del viernes.", "clue": "poder (to be able to) — future simple"},
+      {"inf": "ser", "person": "él", "level": "b2", "answer": "será", "sentence": "Él ___ un gran ingeniero algún día.", "clue": "ser (to be) — future simple"}
+    ]
+  },
+  "subjuntivo": {
+    "tense": "subjuntivo",
+    "lesson": "El subjuntivo: wishes, doubts, emotions, commands — after 'ojalá', 'espero que', 'quiero que', 'aunque'. Present endings: -e (hablar→hable, coma), -a (vivir→viva, decida). 'Espero que ___ (venir) tú.' Ojalá (that) ___ (llover) poco.",
+    "verbs": [
+      {"inf": "venir", "person": "tú", "level": "b2", "answer": "vengas", "sentence": "Espero que ___ tú a la cena.", "clue": "venir (to come) — present subjunctive"},
+      {"inf": "ser", "person": "él", "level": "b2", "answer": "sea", "sentence": "Quiero que ___ puntual.", "clue": "ser (to be) — present subjunctive"},
+      {"inf": "hablar", "person": "yo", "level": "b2", "answer": "hable", "sentence": "Ojalá yo ___ más idiomas.", "clue": "hablar (to speak) — present subjunctive, wish"},
+      {"inf": "comer", "person": "ella", "level": "b2", "answer": "coma", "sentence": "Espero que ___ más despacio.", "clue": "comer (to eat) — present subjunctive"},
+      {"inf": "decir", "person": "tú", "level": "b2", "answer": "digas", "sentence": "No creo que ___ la verdad.", "clue": "decir (to say) — present subjunctive, doubt"},
+      {"inf": "ir", "person": "usted", "level": "b2", "answer": "vaya", "sentence": "Prefiero que ___ usted al médico.", "clue": "ir (to go) — present subjunctive, preference"},
+      {"inf": "llover", "person": "tú", "level": "b2", "answer": "llueva", "sentence": "Ojalá que ___ poco este verano.", "clue": "llover (to rain) — present subjunctive, wish"},
+      {"inf": "saber", "person": "yo", "level": "c1", "answer": "supiera", "sentence": "Si yo ___ la respuesta, te la diría.", "clue": "saber (to know) — imperfect subjunctive (if-clause)"},
+      {"inf": "tener", "person": "tú", "level": "c1", "answer": "tuvieras", "sentence": "Si ___ más paciencia, escucharías.", "clue": "tener (to have) — imperfect subjunctive (if-clause)"},
+      {"inf": "hacer", "person": "él", "level": "c1", "answer": "hubiera", "sentence": "¿Por qué no ___ él dicho nada antes?", "clue": "hacer (to do) — pluperfect subjunctive"}
     ]
   }
 }
